@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#080b12" />
+    <title>NOVA Crosshair</title>
+  </head>
+  <body>
+    <div id="app" class="app-frame">
+      <header class="titlebar" data-tauri-drag-region>
+        <div class="brand-lockup" data-tauri-drag-region>
+          <div class="brand-mark" aria-hidden="true"><span></span><span></span></div>
+          <div class="brand-copy" data-tauri-drag-region>
+            <strong>NOVA</strong><span>CROSSHAIR OVERLAY</span>
+          </div>
+        </div>
+        <div class="titlebar-right">
+          <span class="build-tag">PHASE 02</span>
+          <button id="minimize-window" class="window-control" type="button" title="Свернуть окно" aria-label="Свернуть окно">−</button>
+          <button id="hide-window" class="window-control close-control" type="button" title="Скрыть в системный трей" aria-label="Скрыть окно">×</button>
+        </div>
+      </header>
+
+      <div class="app-layout">
+        <aside class="sidebar">
+          <div class="sidebar-section-label">РАБОЧЕЕ ПРОСТРАНСТВО</div>
+          <button class="nav-item active" type="button" aria-current="page" title="Каталог и настройки прицела">
+            <span class="nav-icon nav-home" aria-hidden="true"></span><span>Прицел</span><span class="nav-indicator"></span>
+          </button>
+          <button class="nav-item disabled" type="button" title="Профили появятся в фазе 3" disabled>
+            <span class="nav-icon nav-layers" aria-hidden="true"></span><span>Профили</span><span class="nav-soon">ФАЗА 03</span>
+          </button>
+          <button class="nav-item disabled" type="button" title="Наблюдатель игр появится в фазе 3" disabled>
+            <span class="nav-icon nav-target" aria-hidden="true"></span><span>Игры</span><span class="nav-soon">ФАЗА 03</span>
+          </button>
+
+          <div class="sidebar-bottom">
+            <div class="sidebar-note-icon" aria-hidden="true">i</div>
+            <p>50 геометрий. Цвет, размер и параметры настраиваются независимо.</p>
+            <div class="sidebar-version">NOVA <span>0.2.0</span></div>
+          </div>
+        </aside>
+
+        <main class="main-content">
+          <section class="welcome-row">
+            <div>
+              <div class="eyebrow"><span class="eyebrow-dot"></span> DESKTOP OVERLAY · PHASE 02</div>
+              <h1>Найди свою <span>форму.</span></h1>
+              <p class="welcome-copy">50 геометрий прицела и моментальный предпросмотр на экране и в игре.</p>
+            </div>
+            <div class="live-badge"><span class="live-pulse"></span><span id="status-label">ЗАПУСК</span></div>
+          </section>
+
+          <section class="hero-card" aria-labelledby="overlay-heading">
+            <div class="hero-grid-glow" aria-hidden="true"></div>
+            <div class="hero-copy">
+              <div class="hero-overline"><span class="tiny-square"></span> OVERLAY CONTROL</div>
+              <h2 id="overlay-heading">Экранный прицел</h2>
+              <p>Отдельное click-through окно ОС. Не внедряется в игровой процесс и не перехватывает мышь.</p>
+              <div class="hero-status"><span id="hero-status-dot" class="status-dot on"></span><span id="hero-status-text">Оверлей включён</span></div>
+            </div>
+            <button id="overlay-toggle" class="toggle-button is-on" type="button" aria-pressed="true" title="Показать или скрыть оверлей">
+              <span class="toggle-track"><span class="toggle-knob"></span></span>
+              <span class="toggle-label">ВКЛ</span>
+            </button>
+            <div class="hero-corner" aria-hidden="true">N·02</div>
+          </section>
+
+          <section class="configure-grid" aria-label="Предпросмотр и настройки прицела">
+            <article class="preview-card" aria-labelledby="preview-heading">
+              <div class="card-topline">
+                <div><div class="eyebrow small-eyebrow">LIVE PREVIEW</div><h2 id="preview-heading">Предпросмотр</h2></div>
+                <span class="preview-live"><span></span> LIVE</span>
+              </div>
+              <div class="preview-stage">
+                <div class="stage-crosshair" aria-hidden="true"></div>
+                <div class="stage-corner top-left"></div><div class="stage-corner top-right"></div>
+                <div class="stage-corner bottom-left"></div><div class="stage-corner bottom-right"></div>
+                <div id="preview-reticle" class="reticle-slot"></div>
+                <div class="stage-coordinate">X 50.0 <i>/</i> Y 50.0</div>
+              </div>
+              <div class="preview-caption"><span id="selected-name">Классика</span><span id="selected-category">КРЕСТЫ</span></div>
+              <div class="preview-description" id="selected-description">Выберите форму в каталоге ниже.</div>
+            </article>
+
+            <article class="controls-card" aria-labelledby="controls-heading">
+              <div class="card-topline controls-title-row">
+                <div><div class="eyebrow small-eyebrow">PERSONALIZE</div><h2 id="controls-heading">Параметры прицела</h2></div>
+                <button id="reset-settings" class="reset-button" type="button" title="Вернуть параметры выбранного пресета">СБРОСИТЬ</button>
+              </div>
+              <div class="control-grid">
+                <label class="color-control" title="Основной цвет прицела">
+                  <span>Цвет</span><input id="color-control" type="color" value="#69f4cf" aria-label="Цвет прицела" />
+                </label>
+                <label class="range-control" title="Общий размер прицела">
+                  <span class="range-heading">Размер <output id="size-value">72</output></span>
+                  <input id="size-control" type="range" min="28" max="116" step="1" value="72" />
+                </label>
+                <label class="range-control" title="Толщина линий и контуров">
+                  <span class="range-heading">Толщина <output id="thickness-value">3.3</output></span>
+                  <input id="thickness-control" type="range" min="0.8" max="8" step="0.1" value="3.3" />
+                </label>
+                <label class="range-control" title="Свободное пространство в центре линий">
+                  <span class="range-heading">Зазор <output id="gap-value">8</output></span>
+                  <input id="gap-control" type="range" min="0" max="24" step="1" value="8" />
+                </label>
+                <label class="range-control" title="Непрозрачность прицела">
+                  <span class="range-heading">Непрозрачность <output id="opacity-value">100%</output></span>
+                  <input id="opacity-control" type="range" min="20" max="100" step="1" value="100" />
+                </label>
+                <label class="range-control" title="Поворот относительно центра">
+                  <span class="range-heading">Поворот <output id="rotation-value">0°</output></span>
+                  <input id="rotation-control" type="range" min="-180" max="180" step="1" value="0" />
+                </label>
+                <label class="check-control" title="Показывать тёмную окантовку для контраста">
+                  <span class="check-copy"><b>Обводка</b><small>Контрастный контур</small></span>
+                  <input id="outline-enabled" type="checkbox" checked /><span class="check-track"></span>
+                </label>
+                <label class="color-control secondary-color" title="Цвет обводки">
+                  <span>Цвет обводки</span><input id="outline-color" type="color" value="#071019" aria-label="Цвет обводки" />
+                </label>
+                <label class="range-control" title="Толщина тёмной окантовки">
+                  <span class="range-heading">Толщина обводки <output id="outline-thickness-value">7.0</output></span>
+                  <input id="outline-thickness-control" type="range" min="0" max="14" step="0.5" value="7" />
+                </label>
+                <label class="check-control" title="Добавить мягкое свечение вокруг прицела">
+                  <span class="check-copy"><b>Свечение</b><small>Мягкая тень</small></span>
+                  <input id="shadow-enabled" type="checkbox" checked /><span class="check-track"></span>
+                </label>
+                <label class="range-control compact-range" title="Радиус мягкого свечения">
+                  <span class="range-heading">Радиус свечения <output id="shadow-value">4</output></span>
+                  <input id="shadow-control" type="range" min="0" max="12" step="1" value="4" />
+                </label>
+              </div>
+              <div class="settings-saved"><span class="saved-led"></span><span id="settings-status">Настройки сохраняются автоматически</span></div>
+            </article>
+          </section>
+
+          <section class="presets-section catalog-section" aria-labelledby="preset-heading">
+            <div class="section-heading catalog-heading">
+              <div>
+                <div class="eyebrow small-eyebrow">50 SHAPES · 11 COLLECTIONS</div>
+                <h2 id="preset-heading">Каталог прицелов <span id="preset-count" class="catalog-total">50</span></h2>
+              </div>
+              <label class="search-field" title="Поиск по названию и описанию">
+                <span aria-hidden="true">⌕</span><input id="preset-search" type="search" placeholder="Найти прицел…" autocomplete="off" />
+                <kbd>/</kbd>
+              </label>
+            </div>
+            <div id="category-filters" class="category-filters" role="group" aria-label="Фильтр по категориям"></div>
+            <div class="catalog-meta"><span id="results-count">50 прицелов</span><span>Нажмите на карточку, чтобы выбрать</span></div>
+            <div id="preset-list" class="preset-grid" role="list" aria-label="Каталог прицелов"></div>
+            <div id="no-results" class="empty-results" hidden>Ничего не найдено. Измените поиск или категорию.</div>
+          </section>
+
+          <section class="safety-strip">
+            <div class="safety-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M12 3 20 6v5.5c0 4.8-3.4 7.8-8 9.5-4.6-1.7-8-4.7-8-9.5V6l8-3Z"/><path d="m8.5 12 2.2 2.2 4.8-5"/></svg>
+            </div>
+            <div><strong>Без внедрения в игру</strong><span>Нет DLL-инъекций, чтения памяти, драйверов или графических хуков. В exclusive fullscreen оверлей может не отображаться.</span></div>
+          </section>
+
+          <footer class="content-footer">
+            <span><span class="footer-led"></span> NOVA DESKTOP</span>
+            <span id="backend-note">Оверлей готов к работе</span>
+            <span>v0.2.0 <i>·</i> MIT</span>
+          </footer>
+        </main>
+      </div>
+      <div id="toast" class="toast" role="status" aria-live="polite"></div>
+    </div>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>

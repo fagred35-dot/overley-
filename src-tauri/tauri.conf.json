@@ -1,0 +1,58 @@
+{
+  "$schema": "https://schema.tauri.app/config/2",
+  "productName": "NOVA Crosshair",
+  "version": "0.2.0",
+  "identifier": "io.nova.crosshair",
+  "build": {
+    "beforeDevCommand": "npm run dev",
+    "devUrl": "http://localhost:1420",
+    "beforeBuildCommand": "npm run build",
+    "frontendDist": "../dist"
+  },
+  "app": {
+    "withGlobalTauri": true,
+    "security": {
+      "csp": null
+    },
+    "windows": [
+      {
+        "label": "main",
+        "title": "NOVA Crosshair",
+        "width": 1100,
+        "height": 760,
+        "minWidth": 900,
+        "minHeight": 650,
+        "center": true,
+        "resizable": true,
+        "decorations": false,
+        "shadow": true,
+        "transparent": false,
+        "visible": true
+      }
+    ]
+  },
+  "bundle": {
+    "active": true,
+    "targets": ["nsis", "dmg", "appimage", "deb", "rpm"],
+    "category": "Utility",
+    "shortDescription": "Lightweight desktop crosshair overlay",
+    "longDescription": "A transparent, click-through crosshair window rendered separately from the game process.",
+    "icon": [
+      "icons/icon.png",
+      "icons/icon.ico",
+      "icons/icon.icns"
+    ],
+    "license": "MIT",
+    "linux": {
+      "appimage": {
+        "bundleMediaFramework": false
+      },
+      "deb": {
+        "depends": ["libgtk-layer-shell0"]
+      },
+      "rpm": {
+        "depends": ["gtk-layer-shell"]
+      }
+    }
+  }
+}

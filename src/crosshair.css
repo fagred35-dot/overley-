@@ -1,0 +1,54 @@
+.crosshair-svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+  color: var(--crosshair-color, #6cf5d0);
+  filter: var(--crosshair-filter, drop-shadow(0 0 2px rgba(75, 255, 218, 0.3)));
+}
+
+.crosshair-svg .outline,
+.crosshair-svg .outline-fine {
+  fill: none;
+  stroke: var(--crosshair-outline, #071019);
+  stroke-linecap: square;
+  stroke-linejoin: round;
+}
+
+.crosshair-svg .outline { stroke-width: var(--crosshair-outline-thickness, 7); }
+.crosshair-svg .outline-fine { stroke-width: calc(var(--crosshair-outline-thickness, 7) * .72); }
+
+.crosshair-svg .ink,
+.crosshair-svg .ink-fine {
+  fill: none;
+  stroke: var(--crosshair-color, #6cf5d0);
+  stroke-linecap: square;
+  stroke-linejoin: round;
+}
+
+.crosshair-svg .ink { stroke-width: var(--crosshair-thickness, 3.3); }
+.crosshair-svg .ink-fine { stroke-width: calc(var(--crosshair-thickness, 3.3) * .55); }
+
+.crosshair-svg .outline-ring,
+.crosshair-svg .outline-ring-fine {
+  fill: none;
+  stroke: var(--crosshair-outline, #071019);
+  stroke-linecap: round;
+}
+
+.crosshair-svg .outline-ring { stroke-width: var(--crosshair-outline-thickness, 7); }
+.crosshair-svg .outline-ring-fine { stroke-width: calc(var(--crosshair-outline-thickness, 7) * .62); }
+
+.crosshair-svg .ink-ring,
+.crosshair-svg .ink-ring-fine {
+  fill: none;
+  stroke: var(--crosshair-color, #6cf5d0);
+  stroke-linecap: round;
+}
+
+.crosshair-svg .ink-ring { stroke-width: var(--crosshair-thickness, 3.3); }
+.crosshair-svg .ink-ring-fine { stroke-width: calc(var(--crosshair-thickness, 3.3) * .48); }
+.crosshair-svg .outline-dot,
+.crosshair-svg .outline-dot-small { fill: var(--crosshair-outline, #071019); }
+.crosshair-svg .accent-dot,
+.crosshair-svg .accent-dot-small { fill: var(--crosshair-color, #6cf5d0); }

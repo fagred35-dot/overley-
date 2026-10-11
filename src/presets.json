@@ -1,0 +1,4140 @@
+{
+  "presets": [
+    {
+      "id": "classic",
+      "name": "Классика",
+      "subtitle": "Четыре луча + точка",
+      "category": "classic",
+      "description": "Полный симметричный крест с отдельной центральной точкой.",
+      "layers": [
+        {
+          "id": "shape",
+          "type": "vector",
+          "gapMask": true,
+          "markup": "<path class=\"outline\" d=\"M50 5 L50 95 M5 50 L95 50\"/><path class=\"ink\" d=\"M50 5 L50 95 M5 50 L95 50\"/>",
+          "native": [
+            {
+              "type": "segments",
+              "segments": [
+                [
+                  50,
+                  5,
+                  50,
+                  95
+                ],
+                [
+                  5,
+                  50,
+                  95,
+                  50
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "center",
+          "type": "vector",
+          "gapMask": false,
+          "markup": "<circle class=\"outline-dot\" cx=\"50\" cy=\"50\" r=\"5.3\"/><circle class=\"accent-dot\" cx=\"50\" cy=\"50\" r=\"2.8\"/>",
+          "native": [
+            {
+              "type": "dot",
+              "cx": 50,
+              "cy": 50,
+              "radius": 2.8
+            }
+          ]
+        }
+      ],
+      "color": "#69f4cf",
+      "size": 72,
+      "thickness": 3.3,
+      "gap": 8,
+      "outline": {
+        "enabled": true,
+        "color": "#071019",
+        "thickness": 7
+      },
+      "shadow": {
+        "enabled": true,
+        "color": "rgba(83, 246, 207, 0.22)",
+        "blur": 4
+      },
+      "opacity": 1.0,
+      "rotation": 0,
+      "animation": "none",
+      "image": null
+    },
+    {
+      "id": "open-cross",
+      "name": "Открытый крест",
+      "subtitle": "Четыре раздельные стороны",
+      "category": "classic",
+      "description": "Четыре отдельные луча с большим свободным центром.",
+      "layers": [
+        {
+          "id": "shape",
+          "type": "vector",
+          "gapMask": true,
+          "markup": "<path class=\"outline\" d=\"M50 5 L50 33 M50 67 L50 95 M5 50 L33 50 M67 50 L95 50\"/><path class=\"ink\" d=\"M50 5 L50 33 M50 67 L50 95 M5 50 L33 50 M67 50 L95 50\"/>",
+          "native": [
+            {
+              "type": "segments",
+              "segments": [
+                [
+                  50,
+                  5,
+                  50,
+                  33
+                ],
+                [
+                  50,
+                  67,
+                  50,
+                  95
+                ],
+                [
+                  5,
+                  50,
+                  33,
+                  50
+                ],
+                [
+                  67,
+                  50,
+                  95,
+                  50
+                ]
+              ]
+            }
+          ]
+        }
+      ],
+      "color": "#69f4cf",
+      "size": 72,
+      "thickness": 3.3,
+      "gap": 8,
+      "outline": {
+        "enabled": true,
+        "color": "#071019",
+        "thickness": 7
+      },
+      "shadow": {
+        "enabled": true,
+        "color": "rgba(83, 246, 207, 0.22)",
+        "blur": 4
+      },
+      "opacity": 1.0,
+      "rotation": 0,
+      "animation": "none",
+      "image": null
+    },
+    {
+      "id": "tick-cross",
+      "name": "Крест-метки",
+      "subtitle": "Короткие штрихи",
+      "category": "classic",
+      "description": "Четыре коротких штриха и маленькая точка в центре.",
+      "layers": [
+        {
+          "id": "shape",
+          "type": "vector",
+          "gapMask": true,
+          "markup": "<path class=\"outline\" d=\"M50 17 L50 37 M50 63 L50 83 M17 50 L37 50 M63 50 L83 50\"/><path class=\"ink\" d=\"M50 17 L50 37 M50 63 L50 83 M17 50 L37 50 M63 50 L83 50\"/>",
+          "native": [
+            {
+              "type": "segments",
+              "segments": [
+                [
+                  50,
+                  17,
+                  50,
+                  37
+                ],
+                [
+                  50,
+                  63,
+                  50,
+                  83
+                ],
+                [
+                  17,
+                  50,
+                  37,
+                  50
+                ],
+                [
+                  63,
+                  50,
+                  83,
+                  50
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "center",
+          "type": "vector",
+          "gapMask": false,
+          "markup": "<circle class=\"outline-dot\" cx=\"50\" cy=\"50\" r=\"4.6\"/><circle class=\"accent-dot\" cx=\"50\" cy=\"50\" r=\"2.1\"/>",
+          "native": [
+            {
+              "type": "dot",
+              "cx": 50,
+              "cy": 50,
+              "radius": 2.1
+            }
+          ]
+        }
+      ],
+      "color": "#69f4cf",
+      "size": 72,
+      "thickness": 3.3,
+      "gap": 8,
+      "outline": {
+        "enabled": true,
+        "color": "#071019",
+        "thickness": 7
+      },
+      "shadow": {
+        "enabled": true,
+        "color": "rgba(83, 246, 207, 0.22)",
+        "blur": 4
+      },
+      "opacity": 1.0,
+      "rotation": 0,
+      "animation": "none",
+      "image": null
+    },
+    {
+      "id": "fine-cross",
+      "name": "Тонкий крест",
+      "subtitle": "Лёгкая центральная сетка",
+      "category": "classic",
+      "description": "Тонкие непрерывные оси с небольшой выемкой по центру.",
+      "layers": [
+        {
+          "id": "shape",
+          "type": "vector",
+          "gapMask": true,
+          "markup": "<path class=\"outline\" d=\"M50 4 L50 96 M4 50 L96 50\"/><path class=\"ink\" d=\"M50 4 L50 96 M4 50 L96 50\"/>",
+          "native": [
+            {
+              "type": "segments",
+              "segments": [
+                [
+                  50,
+                  4,
+                  50,
+                  96
+                ],
+                [
+                  4,
+                  50,
+                  96,
+                  50
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "center",
+          "type": "vector",
+          "gapMask": false,
+          "markup": "<circle class=\"outline-ring\" cx=\"50\" cy=\"50\" r=\"4.5\"/><circle class=\"ink-ring\" cx=\"50\" cy=\"50\" r=\"4.5\"/>",
+          "native": [
+            {
+              "type": "circle",
+              "cx": 50,
+              "cy": 50,
+              "radius": 4.5
+            }
+          ]
+        }
+      ],
+      "color": "#69f4cf",
+      "size": 72,
+      "thickness": 1.7,
+      "gap": 8,
+      "outline": {
+        "enabled": true,
+        "color": "#071019",
+        "thickness": 7
+      },
+      "shadow": {
+        "enabled": true,
+        "color": "rgba(83, 246, 207, 0.22)",
+        "blur": 4
+      },
+      "opacity": 1.0,
+      "rotation": 0,
+      "animation": "none",
+      "image": null
+    },
+    {
+      "id": "diagonal-cross",
+      "name": "Диагональный X",
+      "subtitle": "Наклонные лучи",
+      "category": "classic",
+      "description": "Диагональный X-образный крест с центральной точкой.",
+      "layers": [
+        {
+          "id": "shape",
+          "type": "vector",
+          "gapMask": true,
+          "markup": "<path class=\"outline\" d=\"M16 16 L84 84 M84 16 L16 84\"/><path class=\"ink\" d=\"M16 16 L84 84 M84 16 L16 84\"/>",
+          "native": [
+            {
+              "type": "segments",
+              "segments": [
+                [
+                  16,
+                  16,
+                  84,
+                  84
+                ],
+                [
+                  84,
+                  16,
+                  16,
+                  84
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "center",
+          "type": "vector",
+          "gapMask": false,
+          "markup": "<circle class=\"outline-dot\" cx=\"50\" cy=\"50\" r=\"5.3\"/><circle class=\"accent-dot\" cx=\"50\" cy=\"50\" r=\"2.8\"/>",
+          "native": [
+            {
+              "type": "dot",
+              "cx": 50,
+              "cy": 50,
+              "radius": 2.8
+            }
+          ]
+        }
+      ],
+      "color": "#69f4cf",
+      "size": 72,
+      "thickness": 3.3,
+      "gap": 8,
+      "outline": {
+        "enabled": true,
+        "color": "#071019",
+        "thickness": 7
+      },
+      "shadow": {
+        "enabled": true,
+        "color": "rgba(83, 246, 207, 0.22)",
+        "blur": 4
+      },
+      "opacity": 1.0,
+      "rotation": 0,
+      "animation": "none",
+      "image": null
+    },
+    {
+      "id": "offset-cross",
+      "name": "Крест с делениями",
+      "subtitle": "Оси и внешние риски",
+      "category": "classic",
+      "description": "Оси пересекаются с четырьмя внешними рисками и центральной точкой.",
+      "layers": [
+        {
+          "id": "shape",
+          "type": "vector",
+          "gapMask": true,
+          "markup": "<path class=\"outline\" d=\"M50 7 L50 93 M7 50 L93 50 M27 43 L27 57 M73 43 L73 57 M43 27 L57 27 M43 73 L57 73\"/><path class=\"ink\" d=\"M50 7 L50 93 M7 50 L93 50 M27 43 L27 57 M73 43 L73 57 M43 27 L57 27 M43 73 L57 73\"/>",
+          "native": [
+            {
+              "type": "segments",
+              "segments": [
+                [
+                  50,
+                  7,
+                  50,
+                  93
+                ],
+                [
+                  7,
+                  50,
+                  93,
+                  50
+                ],
+                [
+                  27,
+                  43,
+                  27,
+                  57
+                ],
+                [
+                  73,
+                  43,
+                  73,
+                  57
+                ],
+                [
+                  43,
+                  27,
+                  57,
+                  27
+                ],
+                [
+                  43,
+                  73,
+                  57,
+                  73
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "center",
+          "type": "vector",
+          "gapMask": false,
+          "markup": "<circle class=\"outline-dot\" cx=\"50\" cy=\"50\" r=\"4.7\"/><circle class=\"accent-dot\" cx=\"50\" cy=\"50\" r=\"2.2\"/>",
+          "native": [
+            {
+              "type": "dot",
+              "cx": 50,
+              "cy": 50,
+              "radius": 2.2
+            }
+          ]
+        }
+      ],
+      "color": "#69f4cf",
+      "size": 72,
+      "thickness": 3.3,
+      "gap": 8,
+      "outline": {
+        "enabled": true,
+        "color": "#071019",
+        "thickness": 7
+      },
+      "shadow": {
+        "enabled": true,
+        "color": "rgba(83, 246, 207, 0.22)",
+        "blur": 4
+      },
+      "opacity": 1.0,
+      "rotation": 0,
+      "animation": "none",
+      "image": null
+    },
+    {
+      "id": "stepped-cross",
+      "name": "Ступенчатый",
+      "subtitle": "Угловые ступени",
+      "category": "classic",
+      "description": "Четыре ступенчатых угла вместо обычных прямых лучей.",
+      "layers": [
+        {
+          "id": "shape",
+          "type": "vector",
+          "gapMask": false,
+          "markup": "<path class=\"outline\" d=\"M22 10 L22 28 L10 28\"/><path class=\"ink\" d=\"M22 10 L22 28 L10 28\"/><path class=\"outline\" d=\"M78 10 L78 28 L90 28\"/><path class=\"ink\" d=\"M78 10 L78 28 L90 28\"/><path class=\"outline\" d=\"M10 72 L22 72 L22 90\"/><path class=\"ink\" d=\"M10 72 L22 72 L22 90\"/><path class=\"outline\" d=\"M90 72 L78 72 L78 90\"/><path class=\"ink\" d=\"M90 72 L78 72 L78 90\"/>",
+          "native": [
+            {
+              "type": "polyline",
+              "points": [
+                [
+                  22,
+                  10
+                ],
+                [
+                  22,
+                  28
+                ],
+                [
+                  10,
+                  28
+                ]
+              ],
+              "closed": false
+            },
+            {
+              "type": "polyline",
+              "points": [
+                [
+                  78,
+                  10
+                ],
+                [
+                  78,
+                  28
+                ],
+                [
+                  90,
+                  28
+                ]
+              ],
+              "closed": false
+            },
+            {
+              "type": "polyline",
+              "points": [
+                [
+                  10,
+                  72
+                ],
+                [
+                  22,
+                  72
+                ],
+                [
+                  22,
+                  90
+                ]
+              ],
+              "closed": false
+            },
+            {
+              "type": "polyline",
+              "points": [
+                [
+                  90,
+                  72
+                ],
+                [
+                  78,
+                  72
+                ],
+                [
+                  78,
+                  90
+                ]
+              ],
+              "closed": false
+            }
+          ]
+        },
+        {
+          "id": "center",
+          "type": "vector",
+          "gapMask": false,
+          "markup": "<circle class=\"outline-dot\" cx=\"50\" cy=\"50\" r=\"5.3\"/><circle class=\"accent-dot\" cx=\"50\" cy=\"50\" r=\"2.8\"/>",
+          "native": [
+            {
+              "type": "dot",
+              "cx": 50,
+              "cy": 50,
+              "radius": 2.8
+            }
+          ]
+        }
+      ],
+      "color": "#69f4cf",
+      "size": 72,
+      "thickness": 3.3,
+      "gap": 8,
+      "outline": {
+        "enabled": true,
+        "color": "#071019",
+        "thickness": 7
+      },
+      "shadow": {
+        "enabled": true,
+        "color": "rgba(83, 246, 207, 0.22)",
+        "blur": 4
+      },
+      "opacity": 1.0,
+      "rotation": 0,
+      "animation": "none",
+      "image": null
+    },
+    {
+      "id": "micro-dot",
+      "name": "Микроточка",
+      "subtitle": "Малый центр",
+      "category": "dot",
+      "description": "Минимальная точка внутри тонкого кольца.",
+      "layers": [
+        {
+          "id": "shape",
+          "type": "vector",
+          "gapMask": false,
+          "markup": "<circle class=\"outline-ring\" cx=\"50\" cy=\"50\" r=\"9\"/><circle class=\"ink-ring\" cx=\"50\" cy=\"50\" r=\"9\"/>",
+          "native": [
+            {
+              "type": "circle",
+              "cx": 50,
+              "cy": 50,
+              "radius": 9
+            }
+          ]
+        },
+        {
+          "id": "center",
+          "type": "vector",
+          "gapMask": false,
+          "markup": "<circle class=\"outline-dot\" cx=\"50\" cy=\"50\" r=\"5\"/><circle class=\"accent-dot\" cx=\"50\" cy=\"50\" r=\"2.5\"/>",
+          "native": [
+            {
+              "type": "dot",
+              "cx": 50,
+              "cy": 50,
+              "radius": 2.5
+            }
+          ]
+        }
+      ],
+      "color": "#69f4cf",
+      "size": 72,
+      "thickness": 3.3,
+      "gap": 8,
+      "outline": {
+        "enabled": true,
+        "color": "#071019",
+        "thickness": 7
+      },
+      "shadow": {
+        "enabled": true,
+        "color": "rgba(83, 246, 207, 0.22)",
+        "blur": 4
+      },
+      "opacity": 1.0,
+      "rotation": 0,
+      "animation": "none",
+      "image": null
+    },
+    {
+      "id": "hollow-dot",
+      "name": "Пустая точка",
+      "subtitle": "Тонкий контур",
+      "category": "dot",
+      "description": "Только пустое центральное кольцо без заливки.",
+      "layers": [
+        {
+          "id": "shape",
+          "type": "vector",
+          "gapMask": false,
+          "markup": "<circle class=\"outline-ring\" cx=\"50\" cy=\"50\" r=\"7\"/><circle class=\"ink-ring\" cx=\"50\" cy=\"50\" r=\"7\"/>",
+          "native": [
+            {
+              "type": "circle",
+              "cx": 50,
+              "cy": 50,
+              "radius": 7
+            }
+          ]
+        }
+      ],
+      "color": "#69f4cf",
+      "size": 72,
+      "thickness": 2.2,
+      "gap": 8,
+      "outline": {
+        "enabled": true,
+        "color": "#071019",
+        "thickness": 7
+      },
+      "shadow": {
+        "enabled": true,
+        "color": "rgba(83, 246, 207, 0.22)",
+        "blur": 4
+      },
+      "opacity": 1.0,
+      "rotation": 0,
+      "animation": "none",
+      "image": null
+    },
+    {
+      "id": "square-dot",
+      "name": "Квадратная точка",
+      "subtitle": "Чёткий пиксельный центр",
+      "category": "dot",
+      "description": "Малый квадратный центр с контрастной обводкой.",
+      "layers": [
+        {
+          "id": "shape",
+          "type": "vector",
+          "gapMask": false,
+          "markup": "<path class=\"outline\" d=\"M43 43 L57 43 L57 57 L43 57 Z\"/><path class=\"ink\" d=\"M43 43 L57 43 L57 57 L43 57 Z\"/>",
+          "native": [
+            {
+              "type": "polyline",
+              "points": [
+                [
+                  43,
+                  43
+                ],
+                [
+                  57,
+                  43
+                ],
+                [
+                  57,
+                  57
+                ],
+                [
+                  43,
+                  57
+                ]
+              ],
+              "closed": true
+            }
+          ]
+        }
+      ],
+      "color": "#69f4cf",
+      "size": 72,
+      "thickness": 3.3,
+      "gap": 8,
+      "outline": {
+        "enabled": true,
+        "color": "#071019",
+        "thickness": 7
+      },
+      "shadow": {
+        "enabled": true,
+        "color": "rgba(83, 246, 207, 0.22)",
+        "blur": 4
+      },
+      "opacity": 1.0,
+      "rotation": 0,
+      "animation": "none",
+      "image": null
+    },
+    {
+      "id": "diamond-dot",
+      "name": "Алмазная точка",
+      "subtitle": "Ромб + ядро",
+      "category": "dot",
+      "description": "Ромбическая окантовка и отдельная центральная точка.",
+      "layers": [
+        {
+          "id": "shape",
+          "type": "vector",
+          "gapMask": false,
+          "markup": "<path class=\"outline\" d=\"M50 37 L63 50 L50 63 L37 50 Z\"/><path class=\"ink\" d=\"M50 37 L63 50 L50 63 L37 50 Z\"/>",
+          "native": [
+            {
+              "type": "polyline",
+              "points": [
+                [
+                  50,
+                  37
+                ],
+                [
+                  63,
+                  50
+                ],
+                [
+                  50,
+                  63
+                ],
+                [
+                  37,
+                  50
+                ]
+              ],
+              "closed": true
+            }
+          ]
+        },
+        {
+          "id": "center",
+          "type": "vector",
+          "gapMask": false,
+          "markup": "<circle class=\"outline-dot\" cx=\"50\" cy=\"50\" r=\"5.3\"/><circle class=\"accent-dot\" cx=\"50\" cy=\"50\" r=\"2.8\"/>",
+          "native": [
+            {
+              "type": "dot",
+              "cx": 50,
+              "cy": 50,
+              "radius": 2.8
+            }
+          ]
+        }
+      ],
+      "color": "#69f4cf",
+      "size": 72,
+      "thickness": 3.3,
+      "gap": 8,
+      "outline": {
+        "enabled": true,
+        "color": "#071019",
+        "thickness": 7
+      },
+      "shadow": {
+        "enabled": true,
+        "color": "rgba(83, 246, 207, 0.22)",
+        "blur": 4
+      },
+      "opacity": 1.0,
+      "rotation": 0,
+      "animation": "none",
+      "image": null
+    },
+    {
+      "id": "double-dot",
+      "name": "Двойная точка",
+      "subtitle": "Вертикальная пара",
+      "category": "dot",
+      "description": "Две точки по вертикали с тонкой внешней окружностью.",
+      "layers": [
+        {
+          "id": "shape",
+          "type": "vector",
+          "gapMask": false,
+          "markup": "<circle class=\"outline-ring\" cx=\"50\" cy=\"50\" r=\"11\"/><circle class=\"ink-ring\" cx=\"50\" cy=\"50\" r=\"11\"/>",
+          "native": [
+            {
+              "type": "circle",
+              "cx": 50,
+              "cy": 50,
+              "radius": 11
+            }
+          ]
+        },
+        {
+          "id": "center",
+          "type": "vector",
+          "gapMask": false,
+          "markup": "<circle class=\"outline-dot\" cx=\"50\" cy=\"50\" r=\"4.7\"/><circle class=\"accent-dot\" cx=\"50\" cy=\"50\" r=\"2.2\"/><circle class=\"outline-dot\" cx=\"50\" cy=\"29\" r=\"4.1\"/><circle class=\"accent-dot\" cx=\"50\" cy=\"29\" r=\"1.6\"/>",
+          "native": [
+            {
+              "type": "dot",
+              "cx": 50,
+              "cy": 50,
+              "radius": 2.2
+            },
+            {
+              "type": "dot",
+              "cx": 50,
+              "cy": 29,
+              "radius": 1.6
+            }
+          ]
+        }
+      ],
+      "color": "#69f4cf",
+      "size": 72,
+      "thickness": 3.3,
+      "gap": 8,
+      "outline": {
+        "enabled": true,
+        "color": "#071019",
+        "thickness": 7
+      },
+      "shadow": {
+        "enabled": true,
+        "color": "rgba(83, 246, 207, 0.22)",
+        "blur": 4
+      },
+      "opacity": 1.0,
+      "rotation": 0,
+      "animation": "none",
+      "image": null
+    },
+    {
+      "id": "circle",
+      "name": "Кольцо",
+      "subtitle": "Один чистый контур",
+      "category": "circle",
+      "description": "Простое центральное кольцо без лучей.",
+      "layers": [
+        {
+          "id": "shape",
+          "type": "vector",
+          "gapMask": false,
+          "markup": "<circle class=\"outline-ring\" cx=\"50\" cy=\"50\" r=\"20\"/><circle class=\"ink-ring\" cx=\"50\" cy=\"50\" r=\"20\"/>",
+          "native": [
+            {
+              "type": "circle",
+              "cx": 50,
+              "cy": 50,
+              "radius": 20
+            }
+          ]
+        }
+      ],
+      "color": "#69f4cf",
+      "size": 72,
+      "thickness": 2.3,
+      "gap": 8,
+      "outline": {
+        "enabled": true,
+        "color": "#071019",
+        "thickness": 7
+      },
+      "shadow": {
+        "enabled": true,
+        "color": "rgba(83, 246, 207, 0.22)",
+        "blur": 4
+      },
+      "opacity": 1.0,
+      "rotation": 0,
+      "animation": "none",
+      "image": null
+    },
+    {
+      "id": "segmented-ring",
+      "name": "Сегментное кольцо",
+      "subtitle": "Четыре дуги",
+      "category": "circle",
+      "description": "Кольцо разбито на четыре дуги с равными промежутками.",
+      "layers": [
+        {
+          "id": "shape",
+          "type": "vector",
+          "gapMask": false,
+          "markup": "<path class=\"outline\" d=\"M67.34 36.46 A22 22 0 0 1 67.34 63.54\"/><path class=\"ink\" d=\"M67.34 36.46 A22 22 0 0 1 67.34 63.54\"/><path class=\"outline\" d=\"M63.54 67.34 A22 22 0 0 1 36.46 67.34\"/><path class=\"ink\" d=\"M63.54 67.34 A22 22 0 0 1 36.46 67.34\"/><path class=\"outline\" d=\"M32.66 63.54 A22 22 0 0 1 32.66 36.46\"/><path class=\"ink\" d=\"M32.66 63.54 A22 22 0 0 1 32.66 36.46\"/><path class=\"outline\" d=\"M36.46 32.66 A22 22 0 0 1 63.54 32.66\"/><path class=\"ink\" d=\"M36.46 32.66 A22 22 0 0 1 63.54 32.66\"/>",
+          "native": [
+            {
+              "type": "arc",
+              "cx": 50,
+              "cy": 50,
+              "radius": 22,
+              "startDeg": -38,
+              "endDeg": 38
+            },
+            {
+              "type": "arc",
+              "cx": 50,
+              "cy": 50,
+              "radius": 22,
+              "startDeg": 52,
+              "endDeg": 128
+            },
+            {
+              "type": "arc",
+              "cx": 50,
+              "cy": 50,
+              "radius": 22,
+              "startDeg": 142,
+              "endDeg": 218
+            },
+            {
+              "type": "arc",
+              "cx": 50,
+              "cy": 50,
+              "radius": 22,
+              "startDeg": 232,
+              "endDeg": 308
+            }
+          ]
+        }
+      ],
+      "color": "#69f4cf",
+      "size": 72,
+      "thickness": 2.5,
+      "gap": 8,
+      "outline": {
+        "enabled": true,
+        "color": "#071019",
+        "thickness": 7
+      },
+      "shadow": {
+        "enabled": true,
+        "color": "rgba(83, 246, 207, 0.22)",
+        "blur": 4
+      },
+      "opacity": 1.0,
+      "rotation": 0,
+      "animation": "none",
+      "image": null
+    },
+    {
+      "id": "double-ring",
+      "name": "Двойное кольцо",
+      "subtitle": "Вложенные окружности",
+      "category": "circle",
+      "description": "Две концентрические окружности для точного центрирования.",
+      "layers": [
+        {
+          "id": "shape",
+          "type": "vector",
+          "gapMask": false,
+          "markup": "<circle class=\"outline-ring\" cx=\"50\" cy=\"50\" r=\"24\"/><circle class=\"ink-ring\" cx=\"50\" cy=\"50\" r=\"24\"/><circle class=\"outline-ring\" cx=\"50\" cy=\"50\" r=\"12\"/><circle class=\"ink-ring\" cx=\"50\" cy=\"50\" r=\"12\"/>",
+          "native": [
+            {
+              "type": "circle",
+              "cx": 50,
+              "cy": 50,
+              "radius": 24
+            },
+            {
+              "type": "circle",
+              "cx": 50,
+              "cy": 50,
+              "radius": 12
+            }
+          ]
+        }
+      ],
+      "color": "#69f4cf",
+      "size": 72,
+      "thickness": 2.0,
+      "gap": 8,
+      "outline": {
+        "enabled": true,
+        "color": "#071019",
+        "thickness": 7
+      },
+      "shadow": {
+        "enabled": true,
+        "color": "rgba(83, 246, 207, 0.22)",
+        "blur": 4
+      },
+      "opacity": 1.0,
+      "rotation": 0,
+      "animation": "none",
+      "image": null
+    },
+    {
+      "id": "compass-ring",
+      "name": "Компас",
+      "subtitle": "Круг с четырьмя метками",
+      "category": "circle",
+      "description": "Окружность с четырьмя длинными сторонами света.",
+      "layers": [
+        {
+          "id": "shape",
+          "type": "vector",
+          "gapMask": false,
+          "markup": "<circle class=\"outline-ring\" cx=\"50\" cy=\"50\" r=\"18\"/><circle class=\"ink-ring\" cx=\"50\" cy=\"50\" r=\"18\"/><path class=\"outline\" d=\"M50 4 L50 22 M50 78 L50 96 M4 50 L22 50 M78 50 L96 50\"/><path class=\"ink\" d=\"M50 4 L50 22 M50 78 L50 96 M4 50 L22 50 M78 50 L96 50\"/>",
+          "native": [
+            {
+              "type": "circle",
+              "cx": 50,
+              "cy": 50,
+              "radius": 18
+            },
+            {
+              "type": "segments",
+              "segments": [
+                [
+                  50,
+                  4,
+                  50,
+                  22
+                ],
+                [
+                  50,
+                  78,
+                  50,
+                  96
+                ],
+                [
+                  4,
+                  50,
+                  22,
+                  50
+                ],
+                [
+                  78,
+                  50,
+                  96,
+                  50
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "center",
+          "type": "vector",
+          "gapMask": false,
+          "markup": "<circle class=\"outline-dot\" cx=\"50\" cy=\"50\" r=\"4.3\"/><circle class=\"accent-dot\" cx=\"50\" cy=\"50\" r=\"1.8\"/>",
+          "native": [
+            {
+              "type": "dot",
+              "cx": 50,
+              "cy": 50,
+              "radius": 1.8
+            }
+          ]
+        }
+      ],
+      "color": "#69f4cf",
+      "size": 72,
+      "thickness": 2.1,
+      "gap": 8,
+      "outline": {
+        "enabled": true,
+        "color": "#071019",
+        "thickness": 7
+      },
+      "shadow": {
+        "enabled": true,
+        "color": "rgba(83, 246, 207, 0.22)",
+        "blur": 4
+      },
+      "opacity": 1.0,
+      "rotation": 0,
+      "animation": "none",
+      "image": null
+    },
+    {
+      "id": "bullseye",
+      "name": "Мишень",
+      "subtitle": "Три концентрических круга",
+      "category": "circle",
+      "description": "Мишень с тремя тонкими кольцами и центральным ядром.",
+      "layers": [
+        {
+          "id": "shape",
+          "type": "vector",
+          "gapMask": false,
+          "markup": "<circle class=\"outline-ring\" cx=\"50\" cy=\"50\" r=\"26\"/><circle class=\"ink-ring\" cx=\"50\" cy=\"50\" r=\"26\"/><circle class=\"outline-ring\" cx=\"50\" cy=\"50\" r=\"17\"/><circle class=\"ink-ring\" cx=\"50\" cy=\"50\" r=\"17\"/><circle class=\"outline-ring\" cx=\"50\" cy=\"50\" r=\"8\"/><circle class=\"ink-ring\" cx=\"50\" cy=\"50\" r=\"8\"/>",
+          "native": [
+            {
+              "type": "circle",
+              "cx": 50,
+              "cy": 50,
+              "radius": 26
+            },
+            {
+              "type": "circle",
+              "cx": 50,
+              "cy": 50,
+              "radius": 17
+            },
+            {
+              "type": "circle",
+              "cx": 50,
+              "cy": 50,
+              "radius": 8
+            }
+          ]
+        },
+        {
+          "id": "center",
+          "type": "vector",
+          "gapMask": false,
+          "markup": "<circle class=\"outline-dot\" cx=\"50\" cy=\"50\" r=\"4.1\"/><circle class=\"accent-dot\" cx=\"50\" cy=\"50\" r=\"1.6\"/>",
+          "native": [
+            {
+              "type": "dot",
+              "cx": 50,
+              "cy": 50,
+              "radius": 1.6
+            }
+          ]
+        }
+      ],
+      "color": "#69f4cf",
+      "size": 72,
+      "thickness": 1.8,
+      "gap": 8,
+      "outline": {
+        "enabled": true,
+        "color": "#071019",
+        "thickness": 7
+      },
+      "shadow": {
+        "enabled": true,
+        "color": "rgba(83, 246, 207, 0.22)",
+        "blur": 4
+      },
+      "opacity": 1.0,
+      "rotation": 0,
+      "animation": "none",
+      "image": null
+    },
+    {
+      "id": "t-top",
+      "name": "Т-форма",
+      "subtitle": "Штанга сверху",
+      "category": "tl",
+      "description": "T-образный прицел с длинной верхней перекладиной.",
+      "layers": [
+        {
+          "id": "shape",
+          "type": "vector",
+          "gapMask": false,
+          "markup": "<path class=\"outline\" d=\"M20 28 L80 28 M50 28 L50 88\"/><path class=\"ink\" d=\"M20 28 L80 28 M50 28 L50 88\"/>",
+          "native": [
+            {
+              "type": "segments",
+              "segments": [
+                [
+                  20,
+                  28,
+                  80,
+                  28
+                ],
+                [
+                  50,
+                  28,
+                  50,
+                  88
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "center",
+          "type": "vector",
+          "gapMask": false,
+          "markup": "<circle class=\"outline-dot\" cx=\"50\" cy=\"52\" r=\"4.3\"/><circle class=\"accent-dot\" cx=\"50\" cy=\"52\" r=\"1.8\"/>",
+          "native": [
+            {
+              "type": "dot",
+              "cx": 50,
+              "cy": 52,
+              "radius": 1.8
+            }
+          ]
+        }
+      ],
+      "color": "#69f4cf",
+      "size": 72,
+      "thickness": 3.3,
+      "gap": 8,
+      "outline": {
+        "enabled": true,
+        "color": "#071019",
+        "thickness": 7
+      },
+      "shadow": {
+        "enabled": true,
+        "color": "rgba(83, 246, 207, 0.22)",
+        "blur": 4
+      },
+      "opacity": 1.0,
+      "rotation": 0,
+      "animation": "none",
+      "image": null
+    },
+    {
+      "id": "t-bottom",
+      "name": "Перевёрнутая T",
+      "subtitle": "Штанга снизу",
+      "category": "tl",
+      "description": "Перевёрнутая T-форма с открытым верхом.",
+      "layers": [
+        {
+          "id": "shape",
+          "type": "vector",
+          "gapMask": false,
+          "markup": "<path class=\"outline\" d=\"M20 72 L80 72 M50 12 L50 72\"/><path class=\"ink\" d=\"M20 72 L80 72 M50 12 L50 72\"/>",
+          "native": [
+            {
+              "type": "segments",
+              "segments": [
+                [
+                  20,
+                  72,
+                  80,
+                  72
+                ],
+                [
+                  50,
+                  12,
+                  50,
+                  72
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "center",
+          "type": "vector",
+          "gapMask": false,
+          "markup": "<circle class=\"outline-dot\" cx=\"50\" cy=\"48\" r=\"4.3\"/><circle class=\"accent-dot\" cx=\"50\" cy=\"48\" r=\"1.8\"/>",
+          "native": [
+            {
+              "type": "dot",
+              "cx": 50,
+              "cy": 48,
+              "radius": 1.8
+            }
+          ]
+        }
+      ],
+      "color": "#69f4cf",
+      "size": 72,
+      "thickness": 3.3,
+      "gap": 8,
+      "outline": {
+        "enabled": true,
+        "color": "#071019",
+        "thickness": 7
+      },
+      "shadow": {
+        "enabled": true,
+        "color": "rgba(83, 246, 207, 0.22)",
+        "blur": 4
+      },
+      "opacity": 1.0,
+      "rotation": 0,
+      "animation": "none",
+      "image": null
+    },
+    {
+      "id": "left-corner",
+      "name": "Левая L-форма",
+      "subtitle": "Два угла слева",
+      "category": "tl",
+      "description": "Левая вертикальная ось и две горизонтальные L-метки.",
+      "layers": [
+        {
+          "id": "shape",
+          "type": "vector",
+          "gapMask": false,
+          "markup": "<path class=\"outline\" d=\"M16 18 L16 82 M16 18 L52 18 M16 82 L52 82\"/><path class=\"ink\" d=\"M16 18 L16 82 M16 18 L52 18 M16 82 L52 82\"/>",
+          "native": [
+            {
+              "type": "segments",
+              "segments": [
+                [
+                  16,
+                  18,
+                  16,
+                  82
+                ],
+                [
+                  16,
+                  18,
+                  52,
+                  18
+                ],
+                [
+                  16,
+                  82,
+                  52,
+                  82
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "center",
+          "type": "vector",
+          "gapMask": false,
+          "markup": "<circle class=\"outline-dot\" cx=\"55\" cy=\"50\" r=\"4.3\"/><circle class=\"accent-dot\" cx=\"55\" cy=\"50\" r=\"1.8\"/>",
+          "native": [
+            {
+              "type": "dot",
+              "cx": 55,
+              "cy": 50,
+              "radius": 1.8
+            }
+          ]
+        }
+      ],
+      "color": "#69f4cf",
+      "size": 72,
+      "thickness": 3.3,
+      "gap": 8,
+      "outline": {
+        "enabled": true,
+        "color": "#071019",
+        "thickness": 7
+      },
+      "shadow": {
+        "enabled": true,
+        "color": "rgba(83, 246, 207, 0.22)",
+        "blur": 4
+      },
+      "opacity": 1.0,
+      "rotation": 0,
+      "animation": "none",
+      "image": null
+    },
+    {
+      "id": "corner-brackets",
+      "name": "Угловые скобы",
+      "subtitle": "Четыре L-угла",
+      "category": "tl",
+      "description": "Четыре угловые скобы вокруг свободного центра.",
+      "layers": [
+        {
+          "id": "shape",
+          "type": "vector",
+          "gapMask": false,
+          "markup": "<path class=\"outline\" d=\"M18 34 L18 18 L34 18\"/><path class=\"ink\" d=\"M18 34 L18 18 L34 18\"/><path class=\"outline\" d=\"M66 18 L82 18 L82 34\"/><path class=\"ink\" d=\"M66 18 L82 18 L82 34\"/><path class=\"outline\" d=\"M18 66 L18 82 L34 82\"/><path class=\"ink\" d=\"M18 66 L18 82 L34 82\"/><path class=\"outline\" d=\"M66 82 L82 82 L82 66\"/><path class=\"ink\" d=\"M66 82 L82 82 L82 66\"/>",
+          "native": [
+            {
+              "type": "polyline",
+              "points": [
+                [
+                  18,
+                  34
+                ],
+                [
+                  18,
+                  18
+                ],
+                [
+                  34,
+                  18
+                ]
+              ],
+              "closed": false
+            },
+            {
+              "type": "polyline",
+              "points": [
+                [
+                  66,
+                  18
+                ],
+                [
+                  82,
+                  18
+                ],
+                [
+                  82,
+                  34
+                ]
+              ],
+              "closed": false
+            },
+            {
+              "type": "polyline",
+              "points": [
+                [
+                  18,
+                  66
+                ],
+                [
+                  18,
+                  82
+                ],
+                [
+                  34,
+                  82
+                ]
+              ],
+              "closed": false
+            },
+            {
+              "type": "polyline",
+              "points": [
+                [
+                  66,
+                  82
+                ],
+                [
+                  82,
+                  82
+                ],
+                [
+                  82,
+                  66
+                ]
+              ],
+              "closed": false
+            }
+          ]
+        },
+        {
+          "id": "center",
+          "type": "vector",
+          "gapMask": false,
+          "markup": "<circle class=\"outline-dot\" cx=\"50\" cy=\"50\" r=\"5.3\"/><circle class=\"accent-dot\" cx=\"50\" cy=\"50\" r=\"2.8\"/>",
+          "native": [
+            {
+              "type": "dot",
+              "cx": 50,
+              "cy": 50,
+              "radius": 2.8
+            }
+          ]
+        }
+      ],
+      "color": "#69f4cf",
+      "size": 72,
+      "thickness": 3.3,
+      "gap": 8,
+      "outline": {
+        "enabled": true,
+        "color": "#071019",
+        "thickness": 7
+      },
+      "shadow": {
+        "enabled": true,
+        "color": "rgba(83, 246, 207, 0.22)",
+        "blur": 4
+      },
+      "opacity": 1.0,
+      "rotation": 0,
+      "animation": "none",
+      "image": null
+    },
+    {
+      "id": "chevron",
+      "name": "Шеврон",
+      "subtitle": "Открытая V-форма",
+      "category": "chevron",
+      "description": "Открытый шеврон с коротким нижним указателем.",
+      "layers": [
+        {
+          "id": "shape",
+          "type": "vector",
+          "gapMask": false,
+          "markup": "<path class=\"outline\" d=\"M18 31 L50 59 L82 31\"/><path class=\"ink\" d=\"M18 31 L50 59 L82 31\"/><path class=\"outline\" d=\"M50 65 L50 89\"/><path class=\"ink\" d=\"M50 65 L50 89\"/>",
+          "native": [
+            {
+              "type": "polyline",
+              "points": [
+                [
+                  18,
+                  31
+                ],
+                [
+                  50,
+                  59
+                ],
+                [
+                  82,
+                  31
+                ]
+              ],
+              "closed": false
+            },
+            {
+              "type": "segments",
+              "segments": [
+                [
+                  50,
+                  65,
+                  50,
+                  89
+                ]
+              ]
+            }
+          ]
+        }
+      ],
+      "color": "#69f4cf",
+      "size": 72,
+      "thickness": 3.3,
+      "gap": 8,
+      "outline": {
+        "enabled": true,
+        "color": "#071019",
+        "thickness": 7
+      },
+      "shadow": {
+        "enabled": true,
+        "color": "rgba(83, 246, 207, 0.22)",
+        "blur": 4
+      },
+      "opacity": 1.0,
+      "rotation": 0,
+      "animation": "none",
+      "image": null
+    },
+    {
+      "id": "double-chevron",
+      "name": "Двойной шеврон",
+      "subtitle": "Две вложенные V",
+      "category": "chevron",
+      "description": "Две вложенные V-формы с точкой под центром.",
+      "layers": [
+        {
+          "id": "shape",
+          "type": "vector",
+          "gapMask": false,
+          "markup": "<path class=\"outline\" d=\"M14 28 L50 58 L86 28\"/><path class=\"ink\" d=\"M14 28 L50 58 L86 28\"/><path class=\"outline\" d=\"M25 46 L50 68 L75 46\"/><path class=\"ink\" d=\"M25 46 L50 68 L75 46\"/>",
+          "native": [
+            {
+              "type": "polyline",
+              "points": [
+                [
+                  14,
+                  28
+                ],
+                [
+                  50,
+                  58
+                ],
+                [
+                  86,
+                  28
+                ]
+              ],
+              "closed": false
+            },
+            {
+              "type": "polyline",
+              "points": [
+                [
+                  25,
+                  46
+                ],
+                [
+                  50,
+                  68
+                ],
+                [
+                  75,
+                  46
+                ]
+              ],
+              "closed": false
+            }
+          ]
+        },
+        {
+          "id": "center",
+          "type": "vector",
+          "gapMask": false,
+          "markup": "<circle class=\"outline-dot\" cx=\"50\" cy=\"75\" r=\"4.2\"/><circle class=\"accent-dot\" cx=\"50\" cy=\"75\" r=\"1.7\"/>",
+          "native": [
+            {
+              "type": "dot",
+              "cx": 50,
+              "cy": 75,
+              "radius": 1.7
+            }
+          ]
+        }
+      ],
+      "color": "#69f4cf",
+      "size": 72,
+      "thickness": 3.3,
+      "gap": 8,
+      "outline": {
+        "enabled": true,
+        "color": "#071019",
+        "thickness": 7
+      },
+      "shadow": {
+        "enabled": true,
+        "color": "rgba(83, 246, 207, 0.22)",
+        "blur": 4
+      },
+      "opacity": 1.0,
+      "rotation": 0,
+      "animation": "none",
+      "image": null
+    },
+    {
+      "id": "narrow-chevron",
+      "name": "Узкий шеврон",
+      "subtitle": "Компактная V",
+      "category": "chevron",
+      "description": "Узкие плечи и длинный нижний штрих.",
+      "layers": [
+        {
+          "id": "shape",
+          "type": "vector",
+          "gapMask": false,
+          "markup": "<path class=\"outline\" d=\"M30 27 L50 48 L70 27\"/><path class=\"ink\" d=\"M30 27 L50 48 L70 27\"/><path class=\"outline\" d=\"M50 52 L50 82\"/><path class=\"ink\" d=\"M50 52 L50 82\"/>",
+          "native": [
+            {
+              "type": "polyline",
+              "points": [
+                [
+                  30,
+                  27
+                ],
+                [
+                  50,
+                  48
+                ],
+                [
+                  70,
+                  27
+                ]
+              ],
+              "closed": false
+            },
+            {
+              "type": "segments",
+              "segments": [
+                [
+                  50,
+                  52,
+                  50,
+                  82
+                ]
+              ]
+            }
+          ]
+        }
+      ],
+      "color": "#69f4cf",
+      "size": 72,
+      "thickness": 2.4,
+      "gap": 8,
+      "outline": {
+        "enabled": true,
+        "color": "#071019",
+        "thickness": 7
+      },
+      "shadow": {
+        "enabled": true,
+        "color": "rgba(83, 246, 207, 0.22)",
+        "blur": 4
+      },
+      "opacity": 1.0,
+      "rotation": 0,
+      "animation": "none",
+      "image": null
+    },
+    {
+      "id": "up-arrow",
+      "name": "Стрелка вверх",
+      "subtitle": "Стрелка + стержень",
+      "category": "chevron",
+      "description": "Открытая стрелка с вертикальным стержнем.",
+      "layers": [
+        {
+          "id": "shape",
+          "type": "vector",
+          "gapMask": false,
+          "markup": "<path class=\"outline\" d=\"M24 49 L50 22 L76 49\"/><path class=\"ink\" d=\"M24 49 L50 22 L76 49\"/><path class=\"outline\" d=\"M50 23 L50 83\"/><path class=\"ink\" d=\"M50 23 L50 83\"/>",
+          "native": [
+            {
+              "type": "polyline",
+              "points": [
+                [
+                  24,
+                  49
+                ],
+                [
+                  50,
+                  22
+                ],
+                [
+                  76,
+                  49
+                ]
+              ],
+              "closed": false
+            },
+            {
+              "type": "segments",
+              "segments": [
+                [
+                  50,
+                  23,
+                  50,
+                  83
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "center",
+          "type": "vector",
+          "gapMask": false,
+          "markup": "<circle class=\"outline-dot\" cx=\"50\" cy=\"57\" r=\"4.1\"/><circle class=\"accent-dot\" cx=\"50\" cy=\"57\" r=\"1.6\"/>",
+          "native": [
+            {
+              "type": "dot",
+              "cx": 50,
+              "cy": 57,
+              "radius": 1.6
+            }
+          ]
+        }
+      ],
+      "color": "#69f4cf",
+      "size": 72,
+      "thickness": 3.3,
+      "gap": 8,
+      "outline": {
+        "enabled": true,
+        "color": "#071019",
+        "thickness": 7
+      },
+      "shadow": {
+        "enabled": true,
+        "color": "rgba(83, 246, 207, 0.22)",
+        "blur": 4
+      },
+      "opacity": 1.0,
+      "rotation": 0,
+      "animation": "none",
+      "image": null
+    },
+    {
+      "id": "triangle",
+      "name": "Треугольник",
+      "subtitle": "Открытая вершина",
+      "category": "chevron",
+      "description": "Треугольная рамка с центральным указателем.",
+      "layers": [
+        {
+          "id": "shape",
+          "type": "vector",
+          "gapMask": false,
+          "markup": "<path class=\"outline\" d=\"M20 72 L50 24 L80 72\"/><path class=\"ink\" d=\"M20 72 L50 24 L80 72\"/><path class=\"outline\" d=\"M20 72 L80 72\"/><path class=\"ink\" d=\"M20 72 L80 72\"/>",
+          "native": [
+            {
+              "type": "polyline",
+              "points": [
+                [
+                  20,
+                  72
+                ],
+                [
+                  50,
+                  24
+                ],
+                [
+                  80,
+                  72
+                ]
+              ],
+              "closed": false
+            },
+            {
+              "type": "segments",
+              "segments": [
+                [
+                  20,
+                  72,
+                  80,
+                  72
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "center",
+          "type": "vector",
+          "gapMask": false,
+          "markup": "<circle class=\"outline-dot\" cx=\"50\" cy=\"57\" r=\"4.3\"/><circle class=\"accent-dot\" cx=\"50\" cy=\"57\" r=\"1.8\"/>",
+          "native": [
+            {
+              "type": "dot",
+              "cx": 50,
+              "cy": 57,
+              "radius": 1.8
+            }
+          ]
+        }
+      ],
+      "color": "#69f4cf",
+      "size": 72,
+      "thickness": 3.3,
+      "gap": 8,
+      "outline": {
+        "enabled": true,
+        "color": "#071019",
+        "thickness": 7
+      },
+      "shadow": {
+        "enabled": true,
+        "color": "rgba(83, 246, 207, 0.22)",
+        "blur": 4
+      },
+      "opacity": 1.0,
+      "rotation": 0,
+      "animation": "none",
+      "image": null
+    },
+    {
+      "id": "mil-dot",
+      "name": "Mil-Dot",
+      "subtitle": "Сетка с делениями",
+      "category": "sniper",
+      "description": "Тонкие оси, деления и центральная точка в кольце.",
+      "layers": [
+        {
+          "id": "shape",
+          "type": "vector",
+          "gapMask": true,
+          "markup": "<path class=\"outline\" d=\"M5 50 L95 50 M50 5 L50 95 M25 43 L25 57 M75 43 L75 57 M43 25 L57 25 M43 75 L57 75\"/><path class=\"ink\" d=\"M5 50 L95 50 M50 5 L50 95 M25 43 L25 57 M75 43 L75 57 M43 25 L57 25 M43 75 L57 75\"/><circle class=\"outline-ring\" cx=\"50\" cy=\"50\" r=\"6\"/><circle class=\"ink-ring\" cx=\"50\" cy=\"50\" r=\"6\"/>",
+          "native": [
+            {
+              "type": "segments",
+              "segments": [
+                [
+                  5,
+                  50,
+                  95,
+                  50
+                ],
+                [
+                  50,
+                  5,
+                  50,
+                  95
+                ],
+                [
+                  25,
+                  43,
+                  25,
+                  57
+                ],
+                [
+                  75,
+                  43,
+                  75,
+                  57
+                ],
+                [
+                  43,
+                  25,
+                  57,
+                  25
+                ],
+                [
+                  43,
+                  75,
+                  57,
+                  75
+                ]
+              ]
+            },
+            {
+              "type": "circle",
+              "cx": 50,
+              "cy": 50,
+              "radius": 6
+            }
+          ]
+        },
+        {
+          "id": "center",
+          "type": "vector",
+          "gapMask": false,
+          "markup": "<circle class=\"outline-dot\" cx=\"50\" cy=\"50\" r=\"5.3\"/><circle class=\"accent-dot\" cx=\"50\" cy=\"50\" r=\"2.8\"/>",
+          "native": [
+            {
+              "type": "dot",
+              "cx": 50,
+              "cy": 50,
+              "radius": 2.8
+            }
+          ]
+        }
+      ],
+      "color": "#69f4cf",
+      "size": 72,
+      "thickness": 1.5,
+      "gap": 8,
+      "outline": {
+        "enabled": true,
+        "color": "#071019",
+        "thickness": 7
+      },
+      "shadow": {
+        "enabled": true,
+        "color": "rgba(83, 246, 207, 0.22)",
+        "blur": 4
+      },
+      "opacity": 1.0,
+      "rotation": 0,
+      "animation": "none",
+      "image": null
+    },
+    {
+      "id": "duplex",
+      "name": "Дуплекс",
+      "subtitle": "Толстые внутренние плечи",
+      "category": "sniper",
+      "description": "Дуплексный крест с короткими усиленными внутренними плечами.",
+      "layers": [
+        {
+          "id": "shape",
+          "type": "vector",
+          "gapMask": true,
+          "markup": "<path class=\"outline\" d=\"M5 50 L24 50 M76 50 L95 50 M50 5 L50 24 M50 76 L50 95\"/><path class=\"ink\" d=\"M5 50 L24 50 M76 50 L95 50 M50 5 L50 24 M50 76 L50 95\"/><path class=\"outline\" d=\"M24 50 L39 50 M61 50 L76 50 M50 24 L50 39 M50 61 L50 76\"/><path class=\"ink\" d=\"M24 50 L39 50 M61 50 L76 50 M50 24 L50 39 M50 61 L50 76\"/>",
+          "native": [
+            {
+              "type": "segments",
+              "segments": [
+                [
+                  5,
+                  50,
+                  24,
+                  50
+                ],
+                [
+                  76,
+                  50,
+                  95,
+                  50
+                ],
+                [
+                  50,
+                  5,
+                  50,
+                  24
+                ],
+                [
+                  50,
+                  76,
+                  50,
+                  95
+                ]
+              ]
+            },
+            {
+              "type": "segments",
+              "segments": [
+                [
+                  24,
+                  50,
+                  39,
+                  50
+                ],
+                [
+                  61,
+                  50,
+                  76,
+                  50
+                ],
+                [
+                  50,
+                  24,
+                  50,
+                  39
+                ],
+                [
+                  50,
+                  61,
+                  50,
+                  76
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "center",
+          "type": "vector",
+          "gapMask": false,
+          "markup": "<circle class=\"outline-dot\" cx=\"50\" cy=\"50\" r=\"5.3\"/><circle class=\"accent-dot\" cx=\"50\" cy=\"50\" r=\"2.8\"/>",
+          "native": [
+            {
+              "type": "dot",
+              "cx": 50,
+              "cy": 50,
+              "radius": 2.8
+            }
+          ]
+        }
+      ],
+      "color": "#69f4cf",
+      "size": 72,
+      "thickness": 2.2,
+      "gap": 8,
+      "outline": {
+        "enabled": true,
+        "color": "#071019",
+        "thickness": 7
+      },
+      "shadow": {
+        "enabled": true,
+        "color": "rgba(83, 246, 207, 0.22)",
+        "blur": 4
+      },
+      "opacity": 1.0,
+      "rotation": 0,
+      "animation": "none",
+      "image": null
+    },
+    {
+      "id": "stadia",
+      "name": "Стадиометр",
+      "subtitle": "Метки дальности",
+      "category": "sniper",
+      "description": "Стадиометрическая сетка с неодинаковыми отметками дальности.",
+      "layers": [
+        {
+          "id": "shape",
+          "type": "vector",
+          "gapMask": true,
+          "markup": "<path class=\"outline\" d=\"M8 50 L92 50 M50 8 L50 92 M20 44 L20 56 M35 46 L35 54 M65 46 L65 54 M80 44 L80 56 M44 20 L56 20 M46 35 L54 35 M46 65 L54 65 M44 80 L56 80\"/><path class=\"ink\" d=\"M8 50 L92 50 M50 8 L50 92 M20 44 L20 56 M35 46 L35 54 M65 46 L65 54 M80 44 L80 56 M44 20 L56 20 M46 35 L54 35 M46 65 L54 65 M44 80 L56 80\"/>",
+          "native": [
+            {
+              "type": "segments",
+              "segments": [
+                [
+                  8,
+                  50,
+                  92,
+                  50
+                ],
+                [
+                  50,
+                  8,
+                  50,
+                  92
+                ],
+                [
+                  20,
+                  44,
+                  20,
+                  56
+                ],
+                [
+                  35,
+                  46,
+                  35,
+                  54
+                ],
+                [
+                  65,
+                  46,
+                  65,
+                  54
+                ],
+                [
+                  80,
+                  44,
+                  80,
+                  56
+                ],
+                [
+                  44,
+                  20,
+                  56,
+                  20
+                ],
+                [
+                  46,
+                  35,
+                  54,
+                  35
+                ],
+                [
+                  46,
+                  65,
+                  54,
+                  65
+                ],
+                [
+                  44,
+                  80,
+                  56,
+                  80
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "center",
+          "type": "vector",
+          "gapMask": false,
+          "markup": "<circle class=\"outline-dot\" cx=\"50\" cy=\"50\" r=\"4\"/><circle class=\"accent-dot\" cx=\"50\" cy=\"50\" r=\"1.5\"/>",
+          "native": [
+            {
+              "type": "dot",
+              "cx": 50,
+              "cy": 50,
+              "radius": 1.5
+            }
+          ]
+        }
+      ],
+      "color": "#69f4cf",
+      "size": 72,
+      "thickness": 1.4,
+      "gap": 8,
+      "outline": {
+        "enabled": true,
+        "color": "#071019",
+        "thickness": 7
+      },
+      "shadow": {
+        "enabled": true,
+        "color": "rgba(83, 246, 207, 0.22)",
+        "blur": 4
+      },
+      "opacity": 1.0,
+      "rotation": 0,
+      "animation": "none",
+      "image": null
+    },
+    {
+      "id": "rangefinder",
+      "name": "Дальномер",
+      "subtitle": "Горизонтальная шкала",
+      "category": "sniper",
+      "description": "Длинная горизонтальная шкала с вертикальным дальномерным указателем.",
+      "layers": [
+        {
+          "id": "shape",
+          "type": "vector",
+          "gapMask": true,
+          "markup": "<path class=\"outline\" d=\"M5 50 L95 50 M15 43 L15 57 M30 46 L30 54 M70 46 L70 54 M85 43 L85 57 M50 25 L50 40 M50 60 L50 75\"/><path class=\"ink\" d=\"M5 50 L95 50 M15 43 L15 57 M30 46 L30 54 M70 46 L70 54 M85 43 L85 57 M50 25 L50 40 M50 60 L50 75\"/>",
+          "native": [
+            {
+              "type": "segments",
+              "segments": [
+                [
+                  5,
+                  50,
+                  95,
+                  50
+                ],
+                [
+                  15,
+                  43,
+                  15,
+                  57
+                ],
+                [
+                  30,
+                  46,
+                  30,
+                  54
+                ],
+                [
+                  70,
+                  46,
+                  70,
+                  54
+                ],
+                [
+                  85,
+                  43,
+                  85,
+                  57
+                ],
+                [
+                  50,
+                  25,
+                  50,
+                  40
+                ],
+                [
+                  50,
+                  60,
+                  50,
+                  75
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "center",
+          "type": "vector",
+          "gapMask": false,
+          "markup": "<circle class=\"outline-dot\" cx=\"50\" cy=\"50\" r=\"5.3\"/><circle class=\"accent-dot\" cx=\"50\" cy=\"50\" r=\"2.8\"/>",
+          "native": [
+            {
+              "type": "dot",
+              "cx": 50,
+              "cy": 50,
+              "radius": 2.8
+            }
+          ]
+        }
+      ],
+      "color": "#69f4cf",
+      "size": 72,
+      "thickness": 1.6,
+      "gap": 8,
+      "outline": {
+        "enabled": true,
+        "color": "#071019",
+        "thickness": 7
+      },
+      "shadow": {
+        "enabled": true,
+        "color": "rgba(83, 246, 207, 0.22)",
+        "blur": 4
+      },
+      "opacity": 1.0,
+      "rotation": 0,
+      "animation": "none",
+      "image": null
+    },
+    {
+      "id": "scope-grid",
+      "name": "Оптическая сетка",
+      "subtitle": "Кольцо + тонкие оси",
+      "category": "sniper",
+      "description": "Прицельная сетка в круглом поле с короткими осями.",
+      "layers": [
+        {
+          "id": "shape",
+          "type": "vector",
+          "gapMask": true,
+          "markup": "<circle class=\"outline-ring\" cx=\"50\" cy=\"50\" r=\"27\"/><circle class=\"ink-ring\" cx=\"50\" cy=\"50\" r=\"27\"/><path class=\"outline\" d=\"M50 4 L50 23 M50 77 L50 96 M4 50 L23 50 M77 50 L96 50\"/><path class=\"ink\" d=\"M50 4 L50 23 M50 77 L50 96 M4 50 L23 50 M77 50 L96 50\"/>",
+          "native": [
+            {
+              "type": "circle",
+              "cx": 50,
+              "cy": 50,
+              "radius": 27
+            },
+            {
+              "type": "segments",
+              "segments": [
+                [
+                  50,
+                  4,
+                  50,
+                  23
+                ],
+                [
+                  50,
+                  77,
+                  50,
+                  96
+                ],
+                [
+                  4,
+                  50,
+                  23,
+                  50
+                ],
+                [
+                  77,
+                  50,
+                  96,
+                  50
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "center",
+          "type": "vector",
+          "gapMask": false,
+          "markup": "<circle class=\"outline-dot\" cx=\"50\" cy=\"50\" r=\"4\"/><circle class=\"accent-dot\" cx=\"50\" cy=\"50\" r=\"1.5\"/>",
+          "native": [
+            {
+              "type": "dot",
+              "cx": 50,
+              "cy": 50,
+              "radius": 1.5
+            }
+          ]
+        }
+      ],
+      "color": "#69f4cf",
+      "size": 72,
+      "thickness": 1.5,
+      "gap": 8,
+      "outline": {
+        "enabled": true,
+        "color": "#071019",
+        "thickness": 7
+      },
+      "shadow": {
+        "enabled": true,
+        "color": "rgba(83, 246, 207, 0.22)",
+        "blur": 4
+      },
+      "opacity": 1.0,
+      "rotation": 0,
+      "animation": "none",
+      "image": null
+    },
+    {
+      "id": "dynamic-spread",
+      "name": "Разброс",
+      "subtitle": "Расходящиеся лучи",
+      "category": "dynamic",
+      "description": "Четыре отделённых луча и стрелочные метки раскрытия.",
+      "layers": [
+        {
+          "id": "shape",
+          "type": "vector",
+          "gapMask": true,
+          "markup": "<path class=\"outline\" d=\"M50 8 L50 31 M50 69 L50 92 M8 50 L31 50 M69 50 L92 50\"/><path class=\"ink\" d=\"M50 8 L50 31 M50 69 L50 92 M8 50 L31 50 M69 50 L92 50\"/><path class=\"outline\" d=\"M42 42 L50 37 L58 42\"/><path class=\"ink\" d=\"M42 42 L50 37 L58 42\"/><path class=\"outline\" d=\"M42 58 L50 63 L58 58\"/><path class=\"ink\" d=\"M42 58 L50 63 L58 58\"/>",
+          "native": [
+            {
+              "type": "segments",
+              "segments": [
+                [
+                  50,
+                  8,
+                  50,
+                  31
+                ],
+                [
+                  50,
+                  69,
+                  50,
+                  92
+                ],
+                [
+                  8,
+                  50,
+                  31,
+                  50
+                ],
+                [
+                  69,
+                  50,
+                  92,
+                  50
+                ]
+              ]
+            },
+            {
+              "type": "polyline",
+              "points": [
+                [
+                  42,
+                  42
+                ],
+                [
+                  50,
+                  37
+                ],
+                [
+                  58,
+                  42
+                ]
+              ],
+              "closed": false
+            },
+            {
+              "type": "polyline",
+              "points": [
+                [
+                  42,
+                  58
+                ],
+                [
+                  50,
+                  63
+                ],
+                [
+                  58,
+                  58
+                ]
+              ],
+              "closed": false
+            }
+          ]
+        },
+        {
+          "id": "center",
+          "type": "vector",
+          "gapMask": false,
+          "markup": "<circle class=\"outline-dot\" cx=\"50\" cy=\"50\" r=\"4\"/><circle class=\"accent-dot\" cx=\"50\" cy=\"50\" r=\"1.5\"/>",
+          "native": [
+            {
+              "type": "dot",
+              "cx": 50,
+              "cy": 50,
+              "radius": 1.5
+            }
+          ]
+        }
+      ],
+      "color": "#69f4cf",
+      "size": 72,
+      "thickness": 3.3,
+      "gap": 8,
+      "outline": {
+        "enabled": true,
+        "color": "#071019",
+        "thickness": 7
+      },
+      "shadow": {
+        "enabled": true,
+        "color": "rgba(83, 246, 207, 0.22)",
+        "blur": 4
+      },
+      "opacity": 1.0,
+      "rotation": 0,
+      "animation": "none",
+      "image": null
+    },
+    {
+      "id": "expanding-brackets",
+      "name": "Раскрытие",
+      "subtitle": "Динамические скобы",
+      "category": "dynamic",
+      "description": "Угловые скобы показывают раскрытие вокруг свободного центра.",
+      "layers": [
+        {
+          "id": "shape",
+          "type": "vector",
+          "gapMask": false,
+          "markup": "<path class=\"outline\" d=\"M18 35 L18 18 L35 18\"/><path class=\"ink\" d=\"M18 35 L18 18 L35 18\"/><path class=\"outline\" d=\"M65 18 L82 18 L82 35\"/><path class=\"ink\" d=\"M65 18 L82 18 L82 35\"/><path class=\"outline\" d=\"M18 65 L18 82 L35 82\"/><path class=\"ink\" d=\"M18 65 L18 82 L35 82\"/><path class=\"outline\" d=\"M65 82 L82 82 L82 65\"/><path class=\"ink\" d=\"M65 82 L82 82 L82 65\"/>",
+          "native": [
+            {
+              "type": "polyline",
+              "points": [
+                [
+                  18,
+                  35
+                ],
+                [
+                  18,
+                  18
+                ],
+                [
+                  35,
+                  18
+                ]
+              ],
+              "closed": false
+            },
+            {
+              "type": "polyline",
+              "points": [
+                [
+                  65,
+                  18
+                ],
+                [
+                  82,
+                  18
+                ],
+                [
+                  82,
+                  35
+                ]
+              ],
+              "closed": false
+            },
+            {
+              "type": "polyline",
+              "points": [
+                [
+                  18,
+                  65
+                ],
+                [
+                  18,
+                  82
+                ],
+                [
+                  35,
+                  82
+                ]
+              ],
+              "closed": false
+            },
+            {
+              "type": "polyline",
+              "points": [
+                [
+                  65,
+                  82
+                ],
+                [
+                  82,
+                  82
+                ],
+                [
+                  82,
+                  65
+                ]
+              ],
+              "closed": false
+            }
+          ]
+        },
+        {
+          "id": "center",
+          "type": "vector",
+          "gapMask": false,
+          "markup": "<circle class=\"outline-dot\" cx=\"50\" cy=\"50\" r=\"5.3\"/><circle class=\"accent-dot\" cx=\"50\" cy=\"50\" r=\"2.8\"/>",
+          "native": [
+            {
+              "type": "dot",
+              "cx": 50,
+              "cy": 50,
+              "radius": 2.8
+            }
+          ]
+        }
+      ],
+      "color": "#69f4cf",
+      "size": 72,
+      "thickness": 3.3,
+      "gap": 8,
+      "outline": {
+        "enabled": true,
+        "color": "#071019",
+        "thickness": 7
+      },
+      "shadow": {
+        "enabled": true,
+        "color": "rgba(83, 246, 207, 0.22)",
+        "blur": 4
+      },
+      "opacity": 1.0,
+      "rotation": 0,
+      "animation": "none",
+      "image": null
+    },
+    {
+      "id": "orbit",
+      "name": "Орбита",
+      "subtitle": "Дуги вокруг центра",
+      "category": "dynamic",
+      "description": "Три короткие орбитальные дуги вокруг центральной точки.",
+      "layers": [
+        {
+          "id": "shape",
+          "type": "vector",
+          "gapMask": false,
+          "markup": "<path class=\"outline\" d=\"M72.66 39.43 A25 25 0 0 1 60.57 72.66\"/><path class=\"ink\" d=\"M72.66 39.43 A25 25 0 0 1 60.57 72.66\"/><path class=\"outline\" d=\"M39.43 72.66 A25 25 0 0 1 27.34 39.43\"/><path class=\"ink\" d=\"M39.43 72.66 A25 25 0 0 1 27.34 39.43\"/><path class=\"outline\" d=\"M39.43 27.34 A25 25 0 0 1 72.66 39.43\"/><path class=\"ink\" d=\"M39.43 27.34 A25 25 0 0 1 72.66 39.43\"/>",
+          "native": [
+            {
+              "type": "arc",
+              "cx": 50,
+              "cy": 50,
+              "radius": 25,
+              "startDeg": -25,
+              "endDeg": 65
+            },
+            {
+              "type": "arc",
+              "cx": 50,
+              "cy": 50,
+              "radius": 25,
+              "startDeg": 115,
+              "endDeg": 205
+            },
+            {
+              "type": "arc",
+              "cx": 50,
+              "cy": 50,
+              "radius": 25,
+              "startDeg": 245,
+              "endDeg": 335
+            }
+          ]
+        },
+        {
+          "id": "center",
+          "type": "vector",
+          "gapMask": false,
+          "markup": "<circle class=\"outline-dot\" cx=\"50\" cy=\"50\" r=\"4.5\"/><circle class=\"accent-dot\" cx=\"50\" cy=\"50\" r=\"2\"/>",
+          "native": [
+            {
+              "type": "dot",
+              "cx": 50,
+              "cy": 50,
+              "radius": 2
+            }
+          ]
+        }
+      ],
+      "color": "#69f4cf",
+      "size": 72,
+      "thickness": 3.3,
+      "gap": 8,
+      "outline": {
+        "enabled": true,
+        "color": "#071019",
+        "thickness": 7
+      },
+      "shadow": {
+        "enabled": true,
+        "color": "rgba(83, 246, 207, 0.22)",
+        "blur": 4
+      },
+      "opacity": 1.0,
+      "rotation": 0,
+      "animation": "none",
+      "image": null
+    },
+    {
+      "id": "windmill",
+      "name": "Восьмилучевой",
+      "subtitle": "Радиальные оси",
+      "category": "dynamic",
+      "description": "Восемь направляющих лучей с вырезанным центром.",
+      "layers": [
+        {
+          "id": "shape",
+          "type": "vector",
+          "gapMask": true,
+          "markup": "<path class=\"outline\" d=\"M50 7 L50 36 M50 64 L50 93 M7 50 L36 50 M64 50 L93 50 M19 19 L40 40 M60 60 L81 81 M81 19 L60 40 M40 60 L19 81\"/><path class=\"ink\" d=\"M50 7 L50 36 M50 64 L50 93 M7 50 L36 50 M64 50 L93 50 M19 19 L40 40 M60 60 L81 81 M81 19 L60 40 M40 60 L19 81\"/>",
+          "native": [
+            {
+              "type": "segments",
+              "segments": [
+                [
+                  50,
+                  7,
+                  50,
+                  36
+                ],
+                [
+                  50,
+                  64,
+                  50,
+                  93
+                ],
+                [
+                  7,
+                  50,
+                  36,
+                  50
+                ],
+                [
+                  64,
+                  50,
+                  93,
+                  50
+                ],
+                [
+                  19,
+                  19,
+                  40,
+                  40
+                ],
+                [
+                  60,
+                  60,
+                  81,
+                  81
+                ],
+                [
+                  81,
+                  19,
+                  60,
+                  40
+                ],
+                [
+                  40,
+                  60,
+                  19,
+                  81
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "center",
+          "type": "vector",
+          "gapMask": false,
+          "markup": "<circle class=\"outline-dot\" cx=\"50\" cy=\"50\" r=\"5.3\"/><circle class=\"accent-dot\" cx=\"50\" cy=\"50\" r=\"2.8\"/>",
+          "native": [
+            {
+              "type": "dot",
+              "cx": 50,
+              "cy": 50,
+              "radius": 2.8
+            }
+          ]
+        }
+      ],
+      "color": "#69f4cf",
+      "size": 72,
+      "thickness": 2.2,
+      "gap": 8,
+      "outline": {
+        "enabled": true,
+        "color": "#071019",
+        "thickness": 7
+      },
+      "shadow": {
+        "enabled": true,
+        "color": "rgba(83, 246, 207, 0.22)",
+        "blur": 4
+      },
+      "opacity": 1.0,
+      "rotation": 0,
+      "animation": "none",
+      "image": null
+    },
+    {
+      "id": "pixel-cross",
+      "name": "Пиксельный крест",
+      "subtitle": "Блоковые плечи",
+      "category": "pixel",
+      "description": "Цельный 8-битный крест с блоковыми плечами.",
+      "layers": [
+        {
+          "id": "shape",
+          "type": "vector",
+          "gapMask": false,
+          "markup": "<path class=\"outline\" d=\"M44 8 L56 8 L56 38 L92 38 L92 50 L56 50 L56 92 L44 92 L44 50 L8 50 L8 38 L44 38 Z\"/><path class=\"ink\" d=\"M44 8 L56 8 L56 38 L92 38 L92 50 L56 50 L56 92 L44 92 L44 50 L8 50 L8 38 L44 38 Z\"/>",
+          "native": [
+            {
+              "type": "polyline",
+              "points": [
+                [
+                  44,
+                  8
+                ],
+                [
+                  56,
+                  8
+                ],
+                [
+                  56,
+                  38
+                ],
+                [
+                  92,
+                  38
+                ],
+                [
+                  92,
+                  50
+                ],
+                [
+                  56,
+                  50
+                ],
+                [
+                  56,
+                  92
+                ],
+                [
+                  44,
+                  92
+                ],
+                [
+                  44,
+                  50
+                ],
+                [
+                  8,
+                  50
+                ],
+                [
+                  8,
+                  38
+                ],
+                [
+                  44,
+                  38
+                ]
+              ],
+              "closed": true
+            }
+          ]
+        }
+      ],
+      "color": "#69f4cf",
+      "size": 72,
+      "thickness": 3.3,
+      "gap": 0,
+      "outline": {
+        "enabled": true,
+        "color": "#071019",
+        "thickness": 7
+      },
+      "shadow": {
+        "enabled": true,
+        "color": "rgba(83, 246, 207, 0.22)",
+        "blur": 4
+      },
+      "opacity": 1.0,
+      "rotation": 0,
+      "animation": "none",
+      "image": null
+    },
+    {
+      "id": "pixel-brackets",
+      "name": "Пиксельные углы",
+      "subtitle": "Ступенчатые скобы",
+      "category": "pixel",
+      "description": "Четыре пиксельные ступенчатые скобы.",
+      "layers": [
+        {
+          "id": "shape",
+          "type": "vector",
+          "gapMask": false,
+          "markup": "<path class=\"outline\" d=\"M12 32 L12 12 L32 12 L32 20 L20 20 L20 32 Z\"/><path class=\"ink\" d=\"M12 32 L12 12 L32 12 L32 20 L20 20 L20 32 Z\"/><path class=\"outline\" d=\"M68 12 L88 12 L88 32 L80 32 L80 20 L68 20 Z\"/><path class=\"ink\" d=\"M68 12 L88 12 L88 32 L80 32 L80 20 L68 20 Z\"/><path class=\"outline\" d=\"M12 68 L20 68 L20 80 L32 80 L32 88 L12 88 Z\"/><path class=\"ink\" d=\"M12 68 L20 68 L20 80 L32 80 L32 88 L12 88 Z\"/><path class=\"outline\" d=\"M88 68 L88 88 L68 88 L68 80 L80 80 L80 68 Z\"/><path class=\"ink\" d=\"M88 68 L88 88 L68 88 L68 80 L80 80 L80 68 Z\"/>",
+          "native": [
+            {
+              "type": "polyline",
+              "points": [
+                [
+                  12,
+                  32
+                ],
+                [
+                  12,
+                  12
+                ],
+                [
+                  32,
+                  12
+                ],
+                [
+                  32,
+                  20
+                ],
+                [
+                  20,
+                  20
+                ],
+                [
+                  20,
+                  32
+                ]
+              ],
+              "closed": true
+            },
+            {
+              "type": "polyline",
+              "points": [
+                [
+                  68,
+                  12
+                ],
+                [
+                  88,
+                  12
+                ],
+                [
+                  88,
+                  32
+                ],
+                [
+                  80,
+                  32
+                ],
+                [
+                  80,
+                  20
+                ],
+                [
+                  68,
+                  20
+                ]
+              ],
+              "closed": true
+            },
+            {
+              "type": "polyline",
+              "points": [
+                [
+                  12,
+                  68
+                ],
+                [
+                  20,
+                  68
+                ],
+                [
+                  20,
+                  80
+                ],
+                [
+                  32,
+                  80
+                ],
+                [
+                  32,
+                  88
+                ],
+                [
+                  12,
+                  88
+                ]
+              ],
+              "closed": true
+            },
+            {
+              "type": "polyline",
+              "points": [
+                [
+                  88,
+                  68
+                ],
+                [
+                  88,
+                  88
+                ],
+                [
+                  68,
+                  88
+                ],
+                [
+                  68,
+                  80
+                ],
+                [
+                  80,
+                  80
+                ],
+                [
+                  80,
+                  68
+                ]
+              ],
+              "closed": true
+            }
+          ]
+        },
+        {
+          "id": "center",
+          "type": "vector",
+          "gapMask": false,
+          "markup": "<circle class=\"outline-dot\" cx=\"50\" cy=\"50\" r=\"4.2\"/><circle class=\"accent-dot\" cx=\"50\" cy=\"50\" r=\"1.7\"/>",
+          "native": [
+            {
+              "type": "dot",
+              "cx": 50,
+              "cy": 50,
+              "radius": 1.7
+            }
+          ]
+        }
+      ],
+      "color": "#69f4cf",
+      "size": 72,
+      "thickness": 3.3,
+      "gap": 8,
+      "outline": {
+        "enabled": true,
+        "color": "#071019",
+        "thickness": 7
+      },
+      "shadow": {
+        "enabled": true,
+        "color": "rgba(83, 246, 207, 0.22)",
+        "blur": 4
+      },
+      "opacity": 1.0,
+      "rotation": 0,
+      "animation": "none",
+      "image": null
+    },
+    {
+      "id": "pixel-diamond",
+      "name": "Пиксельный ромб",
+      "subtitle": "Зубчатая рамка",
+      "category": "pixel",
+      "description": "Крупный ступенчатый ромб в пиксельном стиле.",
+      "layers": [
+        {
+          "id": "shape",
+          "type": "vector",
+          "gapMask": false,
+          "markup": "<path class=\"outline\" d=\"M50 12 L62 24 L62 36 L74 36 L74 48 L86 48 L86 52 L74 52 L74 64 L62 64 L62 76 L50 88 L38 76 L38 64 L26 64 L26 52 L14 52 L14 48 L26 48 L26 36 L38 36 L38 24 Z\"/><path class=\"ink\" d=\"M50 12 L62 24 L62 36 L74 36 L74 48 L86 48 L86 52 L74 52 L74 64 L62 64 L62 76 L50 88 L38 76 L38 64 L26 64 L26 52 L14 52 L14 48 L26 48 L26 36 L38 36 L38 24 Z\"/>",
+          "native": [
+            {
+              "type": "polyline",
+              "points": [
+                [
+                  50,
+                  12
+                ],
+                [
+                  62,
+                  24
+                ],
+                [
+                  62,
+                  36
+                ],
+                [
+                  74,
+                  36
+                ],
+                [
+                  74,
+                  48
+                ],
+                [
+                  86,
+                  48
+                ],
+                [
+                  86,
+                  52
+                ],
+                [
+                  74,
+                  52
+                ],
+                [
+                  74,
+                  64
+                ],
+                [
+                  62,
+                  64
+                ],
+                [
+                  62,
+                  76
+                ],
+                [
+                  50,
+                  88
+                ],
+                [
+                  38,
+                  76
+                ],
+                [
+                  38,
+                  64
+                ],
+                [
+                  26,
+                  64
+                ],
+                [
+                  26,
+                  52
+                ],
+                [
+                  14,
+                  52
+                ],
+                [
+                  14,
+                  48
+                ],
+                [
+                  26,
+                  48
+                ],
+                [
+                  26,
+                  36
+                ],
+                [
+                  38,
+                  36
+                ],
+                [
+                  38,
+                  24
+                ]
+              ],
+              "closed": true
+            }
+          ]
+        },
+        {
+          "id": "center",
+          "type": "vector",
+          "gapMask": false,
+          "markup": "<circle class=\"outline-dot\" cx=\"50\" cy=\"50\" r=\"5.3\"/><circle class=\"accent-dot\" cx=\"50\" cy=\"50\" r=\"2.8\"/>",
+          "native": [
+            {
+              "type": "dot",
+              "cx": 50,
+              "cy": 50,
+              "radius": 2.8
+            }
+          ]
+        }
+      ],
+      "color": "#69f4cf",
+      "size": 72,
+      "thickness": 3.3,
+      "gap": 8,
+      "outline": {
+        "enabled": true,
+        "color": "#071019",
+        "thickness": 7
+      },
+      "shadow": {
+        "enabled": true,
+        "color": "rgba(83, 246, 207, 0.22)",
+        "blur": 4
+      },
+      "opacity": 1.0,
+      "rotation": 0,
+      "animation": "none",
+      "image": null
+    },
+    {
+      "id": "block-arrow",
+      "name": "Блочная стрелка",
+      "subtitle": "Пиксельный указатель",
+      "category": "pixel",
+      "description": "Стрелка вверх из прямоугольных пиксельных сегментов.",
+      "layers": [
+        {
+          "id": "shape",
+          "type": "vector",
+          "gapMask": false,
+          "markup": "<path class=\"outline\" d=\"M38 12 L62 12 L62 30 L78 30 L78 42 L62 42 L62 88 L38 88 L38 42 L22 42 L22 30 L38 30 Z\"/><path class=\"ink\" d=\"M38 12 L62 12 L62 30 L78 30 L78 42 L62 42 L62 88 L38 88 L38 42 L22 42 L22 30 L38 30 Z\"/>",
+          "native": [
+            {
+              "type": "polyline",
+              "points": [
+                [
+                  38,
+                  12
+                ],
+                [
+                  62,
+                  12
+                ],
+                [
+                  62,
+                  30
+                ],
+                [
+                  78,
+                  30
+                ],
+                [
+                  78,
+                  42
+                ],
+                [
+                  62,
+                  42
+                ],
+                [
+                  62,
+                  88
+                ],
+                [
+                  38,
+                  88
+                ],
+                [
+                  38,
+                  42
+                ],
+                [
+                  22,
+                  42
+                ],
+                [
+                  22,
+                  30
+                ],
+                [
+                  38,
+                  30
+                ]
+              ],
+              "closed": true
+            }
+          ]
+        }
+      ],
+      "color": "#69f4cf",
+      "size": 72,
+      "thickness": 3.3,
+      "gap": 8,
+      "outline": {
+        "enabled": true,
+        "color": "#071019",
+        "thickness": 7
+      },
+      "shadow": {
+        "enabled": true,
+        "color": "rgba(83, 246, 207, 0.22)",
+        "blur": 4
+      },
+      "opacity": 1.0,
+      "rotation": 0,
+      "animation": "none",
+      "image": null
+    },
+    {
+      "id": "pixel-frame",
+      "name": "Пиксельная рамка",
+      "subtitle": "Квадратные вырезы",
+      "category": "pixel",
+      "description": "Рамка с четырьмя вырезанными пиксельными углами.",
+      "layers": [
+        {
+          "id": "shape",
+          "type": "vector",
+          "gapMask": false,
+          "markup": "<path class=\"outline\" d=\"M20 10 L42 10 L42 18 L28 18 L28 42 L20 42 Z\"/><path class=\"ink\" d=\"M20 10 L42 10 L42 18 L28 18 L28 42 L20 42 Z\"/><path class=\"outline\" d=\"M58 10 L80 10 L80 42 L72 42 L72 18 L58 18 Z\"/><path class=\"ink\" d=\"M58 10 L80 10 L80 42 L72 42 L72 18 L58 18 Z\"/><path class=\"outline\" d=\"M20 58 L28 58 L28 82 L42 82 L42 90 L20 90 Z\"/><path class=\"ink\" d=\"M20 58 L28 58 L28 82 L42 82 L42 90 L20 90 Z\"/><path class=\"outline\" d=\"M72 58 L80 58 L80 90 L58 90 L58 82 L72 82 Z\"/><path class=\"ink\" d=\"M72 58 L80 58 L80 90 L58 90 L58 82 L72 82 Z\"/>",
+          "native": [
+            {
+              "type": "polyline",
+              "points": [
+                [
+                  20,
+                  10
+                ],
+                [
+                  42,
+                  10
+                ],
+                [
+                  42,
+                  18
+                ],
+                [
+                  28,
+                  18
+                ],
+                [
+                  28,
+                  42
+                ],
+                [
+                  20,
+                  42
+                ]
+              ],
+              "closed": true
+            },
+            {
+              "type": "polyline",
+              "points": [
+                [
+                  58,
+                  10
+                ],
+                [
+                  80,
+                  10
+                ],
+                [
+                  80,
+                  42
+                ],
+                [
+                  72,
+                  42
+                ],
+                [
+                  72,
+                  18
+                ],
+                [
+                  58,
+                  18
+                ]
+              ],
+              "closed": true
+            },
+            {
+              "type": "polyline",
+              "points": [
+                [
+                  20,
+                  58
+                ],
+                [
+                  28,
+                  58
+                ],
+                [
+                  28,
+                  82
+                ],
+                [
+                  42,
+                  82
+                ],
+                [
+                  42,
+                  90
+                ],
+                [
+                  20,
+                  90
+                ]
+              ],
+              "closed": true
+            },
+            {
+              "type": "polyline",
+              "points": [
+                [
+                  72,
+                  58
+                ],
+                [
+                  80,
+                  58
+                ],
+                [
+                  80,
+                  90
+                ],
+                [
+                  58,
+                  90
+                ],
+                [
+                  58,
+                  82
+                ],
+                [
+                  72,
+                  82
+                ]
+              ],
+              "closed": true
+            }
+          ]
+        },
+        {
+          "id": "center",
+          "type": "vector",
+          "gapMask": false,
+          "markup": "<circle class=\"outline-dot\" cx=\"50\" cy=\"50\" r=\"5.3\"/><circle class=\"accent-dot\" cx=\"50\" cy=\"50\" r=\"2.8\"/>",
+          "native": [
+            {
+              "type": "dot",
+              "cx": 50,
+              "cy": 50,
+              "radius": 2.8
+            }
+          ]
+        }
+      ],
+      "color": "#69f4cf",
+      "size": 72,
+      "thickness": 3.3,
+      "gap": 8,
+      "outline": {
+        "enabled": true,
+        "color": "#071019",
+        "thickness": 7
+      },
+      "shadow": {
+        "enabled": true,
+        "color": "rgba(83, 246, 207, 0.22)",
+        "blur": 4
+      },
+      "opacity": 1.0,
+      "rotation": 0,
+      "animation": "none",
+      "image": null
+    },
+    {
+      "id": "minimal-plus",
+      "name": "Мини-плюс",
+      "subtitle": "Тонкий плюс",
+      "category": "minimal",
+      "description": "Минималистичный плюс с очень малой центральной точкой.",
+      "layers": [
+        {
+          "id": "shape",
+          "type": "vector",
+          "gapMask": false,
+          "markup": "<path class=\"outline\" d=\"M50 30 L50 70 M30 50 L70 50\"/><path class=\"ink\" d=\"M50 30 L50 70 M30 50 L70 50\"/>",
+          "native": [
+            {
+              "type": "segments",
+              "segments": [
+                [
+                  50,
+                  30,
+                  50,
+                  70
+                ],
+                [
+                  30,
+                  50,
+                  70,
+                  50
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "center",
+          "type": "vector",
+          "gapMask": false,
+          "markup": "<circle class=\"outline-dot\" cx=\"50\" cy=\"50\" r=\"3.9\"/><circle class=\"accent-dot\" cx=\"50\" cy=\"50\" r=\"1.4\"/>",
+          "native": [
+            {
+              "type": "dot",
+              "cx": 50,
+              "cy": 50,
+              "radius": 1.4
+            }
+          ]
+        }
+      ],
+      "color": "#69f4cf",
+      "size": 72,
+      "thickness": 1.6,
+      "gap": 6,
+      "outline": {
+        "enabled": true,
+        "color": "#071019",
+        "thickness": 7
+      },
+      "shadow": {
+        "enabled": true,
+        "color": "rgba(83, 246, 207, 0.22)",
+        "blur": 4
+      },
+      "opacity": 1.0,
+      "rotation": 0,
+      "animation": "none",
+      "image": null
+    },
+    {
+      "id": "minimal-v",
+      "name": "Мини-V",
+      "subtitle": "Две диагонали",
+      "category": "minimal",
+      "description": "Только две тонкие диагонали в форме V.",
+      "layers": [
+        {
+          "id": "shape",
+          "type": "vector",
+          "gapMask": false,
+          "markup": "<path class=\"outline\" d=\"M32 38 L50 58 L68 38\"/><path class=\"ink\" d=\"M32 38 L50 58 L68 38\"/>",
+          "native": [
+            {
+              "type": "polyline",
+              "points": [
+                [
+                  32,
+                  38
+                ],
+                [
+                  50,
+                  58
+                ],
+                [
+                  68,
+                  38
+                ]
+              ],
+              "closed": false
+            }
+          ]
+        }
+      ],
+      "color": "#69f4cf",
+      "size": 72,
+      "thickness": 2.1,
+      "gap": 0,
+      "outline": {
+        "enabled": true,
+        "color": "#071019",
+        "thickness": 7
+      },
+      "shadow": {
+        "enabled": true,
+        "color": "rgba(83, 246, 207, 0.22)",
+        "blur": 4
+      },
+      "opacity": 1.0,
+      "rotation": 0,
+      "animation": "none",
+      "image": null
+    },
+    {
+      "id": "minimal-ring",
+      "name": "Микрокольцо",
+      "subtitle": "Один тонкий круг",
+      "category": "minimal",
+      "description": "Малое тонкое кольцо без дополнительных деталей.",
+      "layers": [
+        {
+          "id": "shape",
+          "type": "vector",
+          "gapMask": false,
+          "markup": "<circle class=\"outline-ring\" cx=\"50\" cy=\"50\" r=\"10\"/><circle class=\"ink-ring\" cx=\"50\" cy=\"50\" r=\"10\"/>",
+          "native": [
+            {
+              "type": "circle",
+              "cx": 50,
+              "cy": 50,
+              "radius": 10
+            }
+          ]
+        }
+      ],
+      "color": "#69f4cf",
+      "size": 72,
+      "thickness": 1.4,
+      "gap": 0,
+      "outline": {
+        "enabled": true,
+        "color": "#071019",
+        "thickness": 7
+      },
+      "shadow": {
+        "enabled": true,
+        "color": "rgba(83, 246, 207, 0.22)",
+        "blur": 4
+      },
+      "opacity": 1.0,
+      "rotation": 0,
+      "animation": "none",
+      "image": null
+    },
+    {
+      "id": "minimal-horizontal",
+      "name": "Горизонталь",
+      "subtitle": "Шкала и центральная риска",
+      "category": "minimal",
+      "description": "Минимальная горизонтальная шкала с короткой центральной риской.",
+      "layers": [
+        {
+          "id": "shape",
+          "type": "vector",
+          "gapMask": true,
+          "markup": "<path class=\"outline\" d=\"M10 50 L44 50 M56 50 L90 50 M50 37 L50 63\"/><path class=\"ink\" d=\"M10 50 L44 50 M56 50 L90 50 M50 37 L50 63\"/>",
+          "native": [
+            {
+              "type": "segments",
+              "segments": [
+                [
+                  10,
+                  50,
+                  44,
+                  50
+                ],
+                [
+                  56,
+                  50,
+                  90,
+                  50
+                ],
+                [
+                  50,
+                  37,
+                  50,
+                  63
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "center",
+          "type": "vector",
+          "gapMask": false,
+          "markup": "<circle class=\"outline-dot\" cx=\"50\" cy=\"50\" r=\"3.8\"/><circle class=\"accent-dot\" cx=\"50\" cy=\"50\" r=\"1.3\"/>",
+          "native": [
+            {
+              "type": "dot",
+              "cx": 50,
+              "cy": 50,
+              "radius": 1.3
+            }
+          ]
+        }
+      ],
+      "color": "#69f4cf",
+      "size": 72,
+      "thickness": 1.5,
+      "gap": 8,
+      "outline": {
+        "enabled": true,
+        "color": "#071019",
+        "thickness": 7
+      },
+      "shadow": {
+        "enabled": true,
+        "color": "rgba(83, 246, 207, 0.22)",
+        "blur": 4
+      },
+      "opacity": 1.0,
+      "rotation": 0,
+      "animation": "none",
+      "image": null
+    },
+    {
+      "id": "hybrid-circle",
+      "name": "Круг + крест",
+      "subtitle": "Кольцо с четырьмя лучами",
+      "category": "hybrid",
+      "description": "Гибрид кольца и четырёх внешних направляющих лучей.",
+      "layers": [
+        {
+          "id": "shape",
+          "type": "vector",
+          "gapMask": true,
+          "markup": "<circle class=\"outline-ring\" cx=\"50\" cy=\"50\" r=\"16\"/><circle class=\"ink-ring\" cx=\"50\" cy=\"50\" r=\"16\"/><path class=\"outline\" d=\"M50 5 L50 26 M50 74 L50 95 M5 50 L26 50 M74 50 L95 50\"/><path class=\"ink\" d=\"M50 5 L50 26 M50 74 L50 95 M5 50 L26 50 M74 50 L95 50\"/>",
+          "native": [
+            {
+              "type": "circle",
+              "cx": 50,
+              "cy": 50,
+              "radius": 16
+            },
+            {
+              "type": "segments",
+              "segments": [
+                [
+                  50,
+                  5,
+                  50,
+                  26
+                ],
+                [
+                  50,
+                  74,
+                  50,
+                  95
+                ],
+                [
+                  5,
+                  50,
+                  26,
+                  50
+                ],
+                [
+                  74,
+                  50,
+                  95,
+                  50
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "center",
+          "type": "vector",
+          "gapMask": false,
+          "markup": "<circle class=\"outline-dot\" cx=\"50\" cy=\"50\" r=\"4.3\"/><circle class=\"accent-dot\" cx=\"50\" cy=\"50\" r=\"1.8\"/>",
+          "native": [
+            {
+              "type": "dot",
+              "cx": 50,
+              "cy": 50,
+              "radius": 1.8
+            }
+          ]
+        }
+      ],
+      "color": "#69f4cf",
+      "size": 72,
+      "thickness": 3.3,
+      "gap": 8,
+      "outline": {
+        "enabled": true,
+        "color": "#071019",
+        "thickness": 7
+      },
+      "shadow": {
+        "enabled": true,
+        "color": "rgba(83, 246, 207, 0.22)",
+        "blur": 4
+      },
+      "opacity": 1.0,
+      "rotation": 0,
+      "animation": "none",
+      "image": null
+    },
+    {
+      "id": "hybrid-diamond",
+      "name": "Ромб + точка",
+      "subtitle": "Геометрический центр",
+      "category": "hybrid",
+      "description": "Ромбическая рамка соединена с четырьмя короткими осями.",
+      "layers": [
+        {
+          "id": "shape",
+          "type": "vector",
+          "gapMask": true,
+          "markup": "<path class=\"outline\" d=\"M50 20 L80 50 L50 80 L20 50 Z\"/><path class=\"ink\" d=\"M50 20 L80 50 L50 80 L20 50 Z\"/><path class=\"outline\" d=\"M50 5 L50 18 M50 82 L50 95 M5 50 L18 50 M82 50 L95 50\"/><path class=\"ink\" d=\"M50 5 L50 18 M50 82 L50 95 M5 50 L18 50 M82 50 L95 50\"/>",
+          "native": [
+            {
+              "type": "polyline",
+              "points": [
+                [
+                  50,
+                  20
+                ],
+                [
+                  80,
+                  50
+                ],
+                [
+                  50,
+                  80
+                ],
+                [
+                  20,
+                  50
+                ]
+              ],
+              "closed": true
+            },
+            {
+              "type": "segments",
+              "segments": [
+                [
+                  50,
+                  5,
+                  50,
+                  18
+                ],
+                [
+                  50,
+                  82,
+                  50,
+                  95
+                ],
+                [
+                  5,
+                  50,
+                  18,
+                  50
+                ],
+                [
+                  82,
+                  50,
+                  95,
+                  50
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "center",
+          "type": "vector",
+          "gapMask": false,
+          "markup": "<circle class=\"outline-dot\" cx=\"50\" cy=\"50\" r=\"5.3\"/><circle class=\"accent-dot\" cx=\"50\" cy=\"50\" r=\"2.8\"/>",
+          "native": [
+            {
+              "type": "dot",
+              "cx": 50,
+              "cy": 50,
+              "radius": 2.8
+            }
+          ]
+        }
+      ],
+      "color": "#69f4cf",
+      "size": 72,
+      "thickness": 3.3,
+      "gap": 8,
+      "outline": {
+        "enabled": true,
+        "color": "#071019",
+        "thickness": 7
+      },
+      "shadow": {
+        "enabled": true,
+        "color": "rgba(83, 246, 207, 0.22)",
+        "blur": 4
+      },
+      "opacity": 1.0,
+      "rotation": 0,
+      "animation": "none",
+      "image": null
+    },
+    {
+      "id": "hybrid-chevron",
+      "name": "Шеврон + точки",
+      "subtitle": "V и боковые маркеры",
+      "category": "hybrid",
+      "description": "Открытый V-образный указатель с двумя боковыми маркерами.",
+      "layers": [
+        {
+          "id": "shape",
+          "type": "vector",
+          "gapMask": false,
+          "markup": "<path class=\"outline\" d=\"M22 38 L50 62 L78 38\"/><path class=\"ink\" d=\"M22 38 L50 62 L78 38\"/><path class=\"outline\" d=\"M50 66 L50 88\"/><path class=\"ink\" d=\"M50 66 L50 88\"/>",
+          "native": [
+            {
+              "type": "polyline",
+              "points": [
+                [
+                  22,
+                  38
+                ],
+                [
+                  50,
+                  62
+                ],
+                [
+                  78,
+                  38
+                ]
+              ],
+              "closed": false
+            },
+            {
+              "type": "segments",
+              "segments": [
+                [
+                  50,
+                  66,
+                  50,
+                  88
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "center",
+          "type": "vector",
+          "gapMask": false,
+          "markup": "<circle class=\"outline-dot\" cx=\"20\" cy=\"50\" r=\"4.2\"/><circle class=\"accent-dot\" cx=\"20\" cy=\"50\" r=\"1.7\"/><circle class=\"outline-dot\" cx=\"80\" cy=\"50\" r=\"4.2\"/><circle class=\"accent-dot\" cx=\"80\" cy=\"50\" r=\"1.7\"/>",
+          "native": [
+            {
+              "type": "dot",
+              "cx": 20,
+              "cy": 50,
+              "radius": 1.7
+            },
+            {
+              "type": "dot",
+              "cx": 80,
+              "cy": 50,
+              "radius": 1.7
+            }
+          ]
+        }
+      ],
+      "color": "#69f4cf",
+      "size": 72,
+      "thickness": 3.3,
+      "gap": 8,
+      "outline": {
+        "enabled": true,
+        "color": "#071019",
+        "thickness": 7
+      },
+      "shadow": {
+        "enabled": true,
+        "color": "rgba(83, 246, 207, 0.22)",
+        "blur": 4
+      },
+      "opacity": 1.0,
+      "rotation": 0,
+      "animation": "none",
+      "image": null
+    },
+    {
+      "id": "animated-pulse",
+      "name": "Пульс",
+      "subtitle": "Точка с кольцом",
+      "category": "animated",
+      "description": "Центральная точка с кольцом; preview использует мягкий пульс.",
+      "layers": [
+        {
+          "id": "shape",
+          "type": "vector",
+          "gapMask": false,
+          "markup": "<circle class=\"outline-ring\" cx=\"50\" cy=\"50\" r=\"15\"/><circle class=\"ink-ring\" cx=\"50\" cy=\"50\" r=\"15\"/>",
+          "native": [
+            {
+              "type": "circle",
+              "cx": 50,
+              "cy": 50,
+              "radius": 15
+            }
+          ]
+        },
+        {
+          "id": "center",
+          "type": "vector",
+          "gapMask": false,
+          "markup": "<circle class=\"outline-dot\" cx=\"50\" cy=\"50\" r=\"5.5\"/><circle class=\"accent-dot\" cx=\"50\" cy=\"50\" r=\"3\"/>",
+          "native": [
+            {
+              "type": "dot",
+              "cx": 50,
+              "cy": 50,
+              "radius": 3
+            }
+          ]
+        }
+      ],
+      "color": "#69f4cf",
+      "size": 72,
+      "thickness": 3.3,
+      "gap": 8,
+      "outline": {
+        "enabled": true,
+        "color": "#071019",
+        "thickness": 7
+      },
+      "shadow": {
+        "enabled": true,
+        "color": "rgba(83, 246, 207, 0.22)",
+        "blur": 4
+      },
+      "opacity": 1.0,
+      "rotation": 0,
+      "animation": "pulse",
+      "image": null
+    },
+    {
+      "id": "animated-spin",
+      "name": "Спиннер",
+      "subtitle": "Компас из восьми лучей",
+      "category": "animated",
+      "description": "Восьмилучевой компас; preview медленно вращается.",
+      "layers": [
+        {
+          "id": "shape",
+          "type": "vector",
+          "gapMask": true,
+          "markup": "<path class=\"outline\" d=\"M50 7 L50 32 M50 68 L50 93 M7 50 L32 50 M68 50 L93 50 M20 20 L38 38 M62 62 L80 80 M80 20 L62 38 M38 62 L20 80\"/><path class=\"ink\" d=\"M50 7 L50 32 M50 68 L50 93 M7 50 L32 50 M68 50 L93 50 M20 20 L38 38 M62 62 L80 80 M80 20 L62 38 M38 62 L20 80\"/>",
+          "native": [
+            {
+              "type": "segments",
+              "segments": [
+                [
+                  50,
+                  7,
+                  50,
+                  32
+                ],
+                [
+                  50,
+                  68,
+                  50,
+                  93
+                ],
+                [
+                  7,
+                  50,
+                  32,
+                  50
+                ],
+                [
+                  68,
+                  50,
+                  93,
+                  50
+                ],
+                [
+                  20,
+                  20,
+                  38,
+                  38
+                ],
+                [
+                  62,
+                  62,
+                  80,
+                  80
+                ],
+                [
+                  80,
+                  20,
+                  62,
+                  38
+                ],
+                [
+                  38,
+                  62,
+                  20,
+                  80
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "center",
+          "type": "vector",
+          "gapMask": false,
+          "markup": "<circle class=\"outline-dot\" cx=\"50\" cy=\"50\" r=\"5.3\"/><circle class=\"accent-dot\" cx=\"50\" cy=\"50\" r=\"2.8\"/>",
+          "native": [
+            {
+              "type": "dot",
+              "cx": 50,
+              "cy": 50,
+              "radius": 2.8
+            }
+          ]
+        }
+      ],
+      "color": "#69f4cf",
+      "size": 72,
+      "thickness": 3.3,
+      "gap": 8,
+      "outline": {
+        "enabled": true,
+        "color": "#071019",
+        "thickness": 7
+      },
+      "shadow": {
+        "enabled": true,
+        "color": "rgba(83, 246, 207, 0.22)",
+        "blur": 4
+      },
+      "opacity": 1.0,
+      "rotation": 0,
+      "animation": "spin",
+      "image": null
+    },
+    {
+      "id": "animated-breathe",
+      "name": "Дыхание",
+      "subtitle": "Ромб и центр",
+      "category": "animated",
+      "description": "Ромбическая рамка с вложенным кольцом; preview плавно меняет масштаб.",
+      "layers": [
+        {
+          "id": "shape",
+          "type": "vector",
+          "gapMask": false,
+          "markup": "<path class=\"outline\" d=\"M50 18 L82 50 L50 82 L18 50 Z\"/><path class=\"ink\" d=\"M50 18 L82 50 L50 82 L18 50 Z\"/><circle class=\"outline-ring\" cx=\"50\" cy=\"50\" r=\"8\"/><circle class=\"ink-ring\" cx=\"50\" cy=\"50\" r=\"8\"/>",
+          "native": [
+            {
+              "type": "polyline",
+              "points": [
+                [
+                  50,
+                  18
+                ],
+                [
+                  82,
+                  50
+                ],
+                [
+                  50,
+                  82
+                ],
+                [
+                  18,
+                  50
+                ]
+              ],
+              "closed": true
+            },
+            {
+              "type": "circle",
+              "cx": 50,
+              "cy": 50,
+              "radius": 8
+            }
+          ]
+        },
+        {
+          "id": "center",
+          "type": "vector",
+          "gapMask": false,
+          "markup": "<circle class=\"outline-dot\" cx=\"50\" cy=\"50\" r=\"4.3\"/><circle class=\"accent-dot\" cx=\"50\" cy=\"50\" r=\"1.8\"/>",
+          "native": [
+            {
+              "type": "dot",
+              "cx": 50,
+              "cy": 50,
+              "radius": 1.8
+            }
+          ]
+        }
+      ],
+      "color": "#69f4cf",
+      "size": 72,
+      "thickness": 3.3,
+      "gap": 8,
+      "outline": {
+        "enabled": true,
+        "color": "#071019",
+        "thickness": 7
+      },
+      "shadow": {
+        "enabled": true,
+        "color": "rgba(83, 246, 207, 0.22)",
+        "blur": 4
+      },
+      "opacity": 1.0,
+      "rotation": 0,
+      "animation": "breathe",
+      "image": null
+    }
+  ]
+}
